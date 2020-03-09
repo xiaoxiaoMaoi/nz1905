@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/shop-demo-regist-consummer/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-shopping-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-dependencies/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8edfba81-e70c-4ee4-a3c5-dcb2d24fdb61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-dependencies/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductTypeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-demo-shopping-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            <state relative-caret-position="410">
+              <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -80,8 +83,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="450">
+              <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3210">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,62 +116,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductTypeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="240">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductTypeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#394#395#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shop-demo-dependencies/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop-demo-dependencies/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2524">
-              <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="25" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/ShopDemoShoppingConsummerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="334">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -191,10 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shop-demo-zuul/src/main/java/com/qf/shop/demo/zuul/filter/MyZuulFilter.java" />
-        <option value="$PROJECT_DIR$/shop-demo-zuul/src/main/java/com/qf/shop/demo/zuul/MyGatewayFallback.java" />
-        <option value="$PROJECT_DIR$/shop-demo-shopping-consummer/src/main/java/com/qf/shop/demo/shoppingcon/summer/config/MyServletConfig.java" />
-        <option value="$PROJECT_DIR$/shop-demo-shopping-consummer/src/main/java/com/qf/shop/demo/shoppingcon/summer/controller/ShoppingController.java" />
         <option value="$PROJECT_DIR$/shop-demo-regist-consummer/src/main/java/com/qf/shop/demo/regist/consumer/controller/ShoppingController.java" />
         <option value="$PROJECT_DIR$/shop-demo-regist-consummer/src/main/java/com/qf/shop/demo/regist/consumer/controller/RegistController.java" />
         <option value="$PROJECT_DIR$/shop-demo-regist-consummer/src/main/java/com/qf/shop/demo/regist/consumer/service/fallback/AdminServiceHystrix.java" />
@@ -237,11 +252,15 @@
         <option value="$PROJECT_DIR$/shop-demo-regist-consumer/src/main/java/com/qf/shop/demo/regist/consumer/ShopDemoRegistConsumerApplication.java" />
         <option value="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/shop-demo-regist-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/shop-demo-shopping-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java" />
-        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductTypeService.java" />
-        <option value="$PROJECT_DIR$/shop-demo-shopping-service/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-dependencies/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductService.java" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductTypeService.java" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/shop-demo-shopping-service/pom.xml" />
       </list>
     </option>
   </component>
@@ -266,8 +285,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="216" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="245" />
     <option name="y" value="67" />
     <option name="width" value="1623" />
     <option name="height" value="912" />
@@ -294,6 +313,11 @@
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-dependencies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -356,7 +380,27 @@
               <item name="shop-demo-shopping-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-shopping-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-shopping-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,7 +419,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/java学习资料/nz1905/11项目/代码/代码/qf-shop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -472,15 +516,15 @@
       <workItem from="1583748920628" duration="8158000" />
       <workItem from="1583758671655" duration="1563000" />
       <workItem from="1583760488695" duration="349000" />
-      <workItem from="1583762501178" duration="344000" />
+      <workItem from="1583762501178" duration="2057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14690000" />
+    <option name="totallyTimeSpent" value="16403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="216" y="67" width="1623" height="912" extended-state="0" />
+    <frame x="245" y="67" width="1623" height="912" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28854766" />
@@ -502,12 +546,12 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003199" side_tool="true" weight="0.46341464" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5009597" side_tool="true" visible="true" weight="0.2622108" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4996801" visible="true" weight="0.24293059" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4990403" visible="true" weight="0.2622108" />
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.32991013" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -526,25 +570,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/config/MyServletConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/controller/ShoppingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-regist-consumer/src/main/java/com/qf/shop/demo/regist/consumer/config/MyServletConfig.java" />
-    <entry file="file://$PROJECT_DIR$/shop-demo-regist-consumer/src/main/java/com/qf/shop/demo/regist/consumer/service/fallback/AdminServiceHystrix.java" />
     <entry file="file://$PROJECT_DIR$/shop-demo-zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -813,15 +838,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="410">
+          <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java">
+    <entry file="file://$PROJECT_DIR$/shop-demo-dependencies/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="330">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -830,22 +862,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/IProductTypeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="240">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/service/impl/ProductTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3210">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-dependencies/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2524">
-          <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        <state relative-caret-position="334">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
         </state>
       </provider>
     </entry>

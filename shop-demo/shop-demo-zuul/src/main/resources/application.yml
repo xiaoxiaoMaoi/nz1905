@@ -1,0 +1,28 @@
+
+spring:
+  application:
+    name: shop-demo-zuul
+
+server:
+  port: 8770
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /regist/**
+      serviceId: shop-demo-regist-service
+      sensitiveHeaders:
+    #      stripPrefix: false
+    #      sensitiveHeaders:
+    api-b:
+      path: /shopping/**
+      serviceId: shop-demo-shopping-service
+      sensitiveHeaders:
+#  ignored-patterns: /**/admin/**
+#  prefix: /api
+#  strip-prefix: true

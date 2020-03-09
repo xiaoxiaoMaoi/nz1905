@@ -1,0 +1,22 @@
+#spring:
+#  application:
+#    name: shop-demo-shopping-service
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/qf-v6?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: 123
+#
+#server:
+#  port: 8763
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888   # 要连接的配置中心服务的地址
+      name: shopping-service       # 要获取的配置文件的名称
+      label: master             # master分支

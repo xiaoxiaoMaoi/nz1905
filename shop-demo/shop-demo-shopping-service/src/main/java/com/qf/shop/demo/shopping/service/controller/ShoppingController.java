@@ -16,4 +16,6 @@ public class ShoppingController {
     public String sayHi(String message) {
         return String.format("当前是来自于%s的消息：%s", serverPort, message);
     }
+
+
 }

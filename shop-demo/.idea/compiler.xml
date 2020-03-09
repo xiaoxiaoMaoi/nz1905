@@ -11,12 +11,12 @@
         <module name="shop-demo-config-server" />
         <module name="shop-demo-zuul" />
         <module name="shop-demo-shop-service" />
+        <module name="common-entity" />
         <module name="common-basic" />
         <module name="shop-demo-shopping-service" />
         <module name="common-mapper" />
         <module name="shop-demo-shopping-consumer" />
         <module name="shop-demo-eureka-server" />
-        <module name="common-entity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

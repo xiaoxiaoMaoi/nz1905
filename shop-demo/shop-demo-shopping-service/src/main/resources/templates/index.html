@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 
 	<head>
@@ -103,9 +104,8 @@
 									
 									<div class="category">
 										<ul class="category-list" id="js_climit_li">
-											<li class="appliance js_toggle relative first">
+											<li th:each="type : ${productTypeList}" th:if="${type.pid==0}" class="appliance js_toggle relative first">
 												<div class="category-info">
-
 													<h3 class="category-name b-category-name"><i><img src="../static/images/cake.png"></i><a class="ml-22" title="点心">点心/蛋糕</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
@@ -113,30 +113,35 @@
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="sort-side">
-																	<dl class="dl-sort">
-																		<dt><span title="蛋糕">蛋糕</span></dt>
-																		<dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>
-																		<dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>
-																		<dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>
-																		<dd><a title="软面包" href="#"><span>软面包</span></a></dd>
-																		<dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>
-																		<dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>
-																		<dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>
-																		<dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>
-																		<dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>
+																	<dl th:each="secondType : ${productTypeList}" th:if="${secondType.pid==type.cid}" class="dl-sort">
+																		<dt><span th:title="${secondType.cname}" th:text="${secondType.cname}"></span></dt>
+																		<dd th:each="thirdType : ${productTypeList}" th:if="${thirdType.pid==secondType.cid}">
+																			<a th:title="${thirdType.cname}" href="#"><span th:text="${thirdType.cname}"></span></a></dd>
 																	</dl>
-																	<dl class="dl-sort">
-																		<dt><span title="蛋糕">点心</span></dt>
-																		<dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>
-																		<dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>
-																		<dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>
-																		<dd><a title="软面包" href="#"><span>软面包</span></a></dd>
-																		<dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>
-																		<dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>
-																		<dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>
-																		<dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>
-																		<dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>
-																	</dl>
+<!--																	<dl class="dl-sort">-->
+<!--																		<dt><span title="蛋糕">蛋糕</span></dt>-->
+<!--																		<dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>-->
+<!--																		<dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>-->
+<!--																		<dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>-->
+<!--																		<dd><a title="软面包" href="#"><span>软面包</span></a></dd>-->
+<!--																		<dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>-->
+<!--																		<dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>-->
+<!--																		<dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>-->
+<!--																		<dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>-->
+<!--																		<dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>-->
+<!--																	</dl>-->
+<!--																	<dl class="dl-sort">-->
+<!--																		<dt><span title="蛋糕">点心</span></dt>-->
+<!--																		<dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>-->
+<!--																		<dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>-->
+<!--																		<dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>-->
+<!--																		<dd><a title="软面包" href="#"><span>软面包</span></a></dd>-->
+<!--																		<dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>-->
+<!--																		<dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>-->
+<!--																		<dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>-->
+<!--																		<dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>-->
+<!--																		<dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>-->
+<!--																	</dl>-->
 
 																</div>
 																<div class="brand-side">

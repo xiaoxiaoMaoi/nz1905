@@ -5,10 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/shop-demo-eureka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-demo-regist-service/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-shopping-service/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-demo-regist-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-shopping-consummer/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-common/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />

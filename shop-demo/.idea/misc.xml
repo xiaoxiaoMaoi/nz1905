@@ -14,11 +14,39 @@
         <option value="$PROJECT_DIR$/shop-demo-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-shopping-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-dependencies/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/regist-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/cart-v1-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/cart-v2-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v2-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/order-v1-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/order-v2-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/pay-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/regist-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/cart-v1-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/cart-v2-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v2-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/order-v1-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/order-v2-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/back-v1-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/back-v3-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/back-v4-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/back-v1-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/back-v3-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/back-v4-consumer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/shop-demo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-service/pom.xml" />
       </set>
     </option>
   </component>

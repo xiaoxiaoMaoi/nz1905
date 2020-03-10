@@ -1,332 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8edfba81-e70c-4ee4-a3c5-dcb2d24fdb61" name="Default Changelist" comment="骨架重做">
-      <change beforePath="$PROJECT_DIR$/shop-demo-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/ShopDemoShoppingConsummerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/ShopDemoShoppingConsummerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.flat.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.flat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.flat.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.flat.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/app-icon72x72@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/app-icon72x72@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-chrome.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-chrome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-firefox.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-firefox.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-ie.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-ie.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-opera.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-opera.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-safari.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-safari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/adminPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/adminPage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/blogPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/blogPage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/landing.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/landing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/landingPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/landingPage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/loginPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/loginPage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/sidebarPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/sidebarPage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/startup-640x1096.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/i/startup-640x1096.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.ie8polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.ie8polyfill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.ie8polyfill.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.ie8polyfill.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.widgets.helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.widgets.helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.widgets.helper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.widgets.helper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/handlebars.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/handlebars.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/AmazeUI-2.4.2/assets/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/css/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/chongzhi.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/chongzhi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/ibar_sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/ibar_sprites.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/logobar.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/logobar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/logobig.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/logobig.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/no-img_mid_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/no-img_mid_.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/wdsc.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/wdsc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/images/weixin_code_145.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/images/weixin_code_145.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/js/jquery-1.7.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/js/jquery-1.7.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/js/jquery-1.9.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/js/jquery-1.9.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/basic/js/quick_links.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/basic/js/quick_links.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/addstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/addstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/appstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/appstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/bilstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/bilstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/blogstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/blogstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/blstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/blstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/bostyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/bostyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/cartstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/cartstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/cmstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/cmstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/colstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/colstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/cpstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/cpstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/dlstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/dlstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/footstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/footstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/hmstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/hmstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/infstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/infstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/jsstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/jsstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/lostyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/lostyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/newstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/newstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/optstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/optstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/orstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/orstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/personal.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/personal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/refstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/refstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/seastyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/seastyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/skin.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/skin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/sortstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/sortstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/stepstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/stepstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/sustyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/sustyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/css/systyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/css/systyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/-0-saturn_solar.jpg_220x220.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/-0-saturn_solar.jpg_220x220.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/0-item_pic.jpg_220x220.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/0-item_pic.jpg_220x220.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/01_mid.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/01_mid.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/01_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/01_small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/02_mid.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/02_mid.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/02_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/02_small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/03.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/03_mid.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/03_mid.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/03_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/03_small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/1-item_pic.jpg_220x220.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/1-item_pic.jpg_220x220.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/1_160x160.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/1_160x160.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/2016.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/2016.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/3CoOkxrFOP.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/3CoOkxrFOP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/556.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/556.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/557.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/557.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/559.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/559.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/566.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/566.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/566fda5cN4b8a1675.gif" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/566fda5cN4b8a1675.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/62988.jpg_80x80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/62988.jpg_80x80.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/65.jpg_120x120xz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/65.jpg_120x120xz.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/72h.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/72h.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/88.jpg_120x120xz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/88.jpg_120x120xz.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/T13iv.XiFdXXa94Hfd-32-32.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/T13iv.XiFdXXa94Hfd-32-32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/TB102.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/TB102.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/TB1SSK7JpXXXXXCXXXXXXXXXXXX-800-600.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/TB1SSK7JpXXXXXCXXXXXXXXXXXX-800-600.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/TB1_pic.jpg_200x200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/TB1_pic.jpg_200x200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/TJ.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/TJ.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/TJ2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/TJ2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/YXARdXxj5.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/YXARdXxj5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/act1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/act1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/act2.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/act2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/act3.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/act3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/activity.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/activity.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/activity1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/activity1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/activity2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/activity2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/activity3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/activity3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ad8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ad8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/addbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/addbg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/addicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/addicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/addicon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/addicon1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/addicon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/addicon2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/advTip.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/advTip.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/bamboo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/bamboo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/bamboo.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/bamboo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/big.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/big.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog02.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog03.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog04.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog05.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog06.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog07.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog08.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog08.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/blog09.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/blog09.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/bonus.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/bonus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/browse1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/browse1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/cake.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/cake.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/cake.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/cake.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/candy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/candy.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/candy.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/candy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/cardbg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/cardbg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/checkbox.gif" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/checkbox.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/chocolate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/chocolate.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/chocolate.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/chocolate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/chongzhi.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/chongzhi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/clockbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/clockbg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/combo.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/combo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/comment.jpg_400x400.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/comment.jpg_400x400.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/comment.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/comment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/cookies.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/cookies.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/cookies.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/cookies.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/coupon.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/coupon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/coupon2015.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/coupon2015.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/coupon20150805.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/coupon20150805.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/couponli.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/couponli.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/cp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/cp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/cp2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/cp2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/day-to.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/day-to.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/extra.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/extra.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/fish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/fish.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/fish.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/fish.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/getAvatar.do.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/getAvatar.do.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/gift_intro_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/gift_intro_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/gift_stamp_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/gift_stamp_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/gift_stamp_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/gift_stamp_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/gift_stamp_21.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/gift_stamp_21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/gift_stamp_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/gift_stamp_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/gift_stamp_31.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/gift_stamp_31.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/header-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/header-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/header-bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/header-bg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/huismall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/huismall.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/hwbn40x40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/hwbn40x40.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/ibar_sprites.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/ibar_sprites.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/icon-sale.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/icon-sale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconbig.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconbig.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconfont-bad.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconfont-bad.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconfont-badon.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconfont-badon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconfont-evaluate.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconfont-evaluate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconfont-good.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconfont-good.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconfont-middle.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconfont-middle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconsmall.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconsmall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconsmall0.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconsmall0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconsmall1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconsmall1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconsmall2.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconsmall2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/iconsmall3.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/iconsmall3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/imgsearch1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/imgsearch1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/index_ico_png32.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/index_ico_png32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/item-pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/item-pic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/kouhong.jpg_80x80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/kouhong.jpg_80x80.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/kuaidi.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/kuaidi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/list1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/list1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/listsmall1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/listsmall1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/logo1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/logobig.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/logobig.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/logobig1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/logobig1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/logobig2.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/logobig2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/mansmall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/mansmall.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/mask.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/mask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/meat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/meat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/meat.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/meat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/moneysmall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/moneysmall.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/mygift_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/mygift_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/navce.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/navce.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/navsmall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/navsmall.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/no-img_mid_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/no-img_mid_.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/nut.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/nut.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/nut.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/nut.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/package.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/package.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/package.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/package.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/pay.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/pay.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/peraddbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/peraddbg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/peraddress.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/peraddress.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/peraddressbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/peraddressbg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/receive.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/receive.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/refund.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/refund.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/return-process-cd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/return-process-cd.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/row1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/row1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/row2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/row2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/row3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/row3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/row4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/row4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/sale-t.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/sale-t.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/sale-t_clock.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/sale-t_clock.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/sale1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/sale1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/sale2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/sale2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/sale3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/sale3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/scoll1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/scoll1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/scoll2.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/scoll2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/send.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/send.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/side.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/side.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/songzi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/songzi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/sprite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/sys_item_selected.gif" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/sys_item_selected.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tea.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tea.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tea.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tea.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tj.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tj.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tj1.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tj1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tj2.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tj2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tw1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tw1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tw2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tw2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tw3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tw3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tw4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tw4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tw5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tw5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tw6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tw6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/tw7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/tw7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/wallet.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/wallet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/wangyin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/wangyin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/wdsc.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/wdsc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/weixin_code_145.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/weixin_code_145.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/weizhifu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/weizhifu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/zhifubao.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/zhifubao.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/images/图标.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/images/图标.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/js/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/js/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/js/jquery-1.7.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/js/jquery-1.7.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/js/jquery.flexslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/js/jquery.flexslider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/js/jquery.imagezoom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/js/jquery.imagezoom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/js/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/js/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/static/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/bill.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/bill.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/billlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/billlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/bindphone.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/bindphone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/bonus.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/bonus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/change.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/collection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/comment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/commentlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/commentlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/coupon.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/coupon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/foot.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/foot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/home1.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/home1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/home3.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/home3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/idcard.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/idcard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/indexlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/indexlogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/information.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/information.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/introduction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/logistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/logistics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/options.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/options.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/orderinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/orderinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/password.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/pay.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/pay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/personal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/question.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/record.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/record.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/refund.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/refund.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/safety.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/safety.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/setpay.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/setpay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/shopcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/shopcart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="8edfba81-e70c-4ee4-a3c5-dcb2d24fdb61" name="Default Changelist" comment="骨架重做" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/shop-demo-api/target/" />
@@ -464,7 +139,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="202">
@@ -493,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/ShopDemoShoppingConsummerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="e#572#573#0" expanded="true" />
                 <element signature="e#659#660#0" expanded="true" />
@@ -504,19 +179,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/SolrV1ServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="110">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/pom.xml">
+        <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="46" column="66" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+            <state relative-caret-position="180">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -626,7 +306,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="176" />
     <option name="y" value="50" />
     <option name="width" value="1623" />
@@ -702,68 +382,53 @@
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="summer" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-shopping-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -929,7 +594,7 @@
     </option>
     <option name="contentProportion" value="0.27510917" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ShopDemoShoppingConsummerApplication">
+  <component name="RunManager" selected="Spring Boot.BackV3ServiceApplication">
     <configuration name="BackV1ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="back-v1-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.back.v1.consumer.BackV1ConsumerApplication" />
@@ -1157,18 +822,18 @@
       <workItem from="1583758671655" duration="1563000" />
       <workItem from="1583760488695" duration="349000" />
       <workItem from="1583762501178" duration="5844000" />
-      <workItem from="1583820066862" duration="12214000" />
+      <workItem from="1583820066862" duration="13084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32404000" />
+    <option name="totallyTimeSpent" value="33274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="176" y="50" width="1623" height="912" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29238644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29238644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -1192,7 +857,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" sideWeight="0.4996801" weight="0.32904884" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4990403" weight="0.32904884" />
       <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.10684581" side_tool="true" weight="0.3958869" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.8925144" visible="true" weight="0.44601542" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.8925144" visible="true" weight="0.44601542" />
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
       <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.49712092" weight="0.32904884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1233,16 +898,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/BackV2ConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/config/MyServletConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v3-consumer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1559,17 +1214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/ShopDemoShoppingConsummerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/src/main/java/com/qf/shop/demo/shopping/service/controller/ShoppingController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -1598,6 +1242,27 @@
             <element signature="e#87086#87092#0" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#1;n#div#6;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-consumer/src/main/java/com/qf/shop/demo/shoppingcon/summer/ShopDemoShoppingConsummerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/SolrV1ServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>

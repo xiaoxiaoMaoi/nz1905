@@ -4,7 +4,7 @@ import com.qf.entity.TProduct;
 import com.qf.entity.TProductType;
 import com.qf.shop.demo.shopping.service.service.impl.ProductServiceImpl;
 import com.qf.shop.demo.shopping.service.service.impl.ProductTypeServiceImpl;
-import jdk.nashorn.internal.ir.annotations.Reference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -20,10 +20,10 @@ public class ShoppingController {
     @Value("${server.port}")
     private String serverPort;
 
-    @Reference
+    @Autowired
     private ProductServiceImpl productService;
 
-    @Reference
+    @Autowired
     private ProductTypeServiceImpl productTypeService;
 
     @RequestMapping("hi")

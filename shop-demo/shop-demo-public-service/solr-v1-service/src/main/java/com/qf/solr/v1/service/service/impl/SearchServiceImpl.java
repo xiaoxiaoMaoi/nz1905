@@ -117,4 +117,37 @@ public class SearchServiceImpl implements ISearchService {
         }
         return ResultBean.error("插入搜索库失败");
     }
+
+    @Override
+    public ResultBean initSolr() {
+        //从数据库中拿到数据
+        List<TProductSearchDTO> products = mapper.selectAll();
+
+        //存放所有的document对象
+        List<SolrInputDocument> docs = new ArrayList<>();
+
+        //遍历products集合，将每一个product对象封装成一个SolrInputDocument对象
+        for (TProductSearchDTO product : products) {
+            SolrInputDocument document = new SolrInputDocument();
+            document.setField("id",product.getId().toString());
+            document.setField("t_product_name",product.gettProductName());
+            document.setField("t_product_sale_price",product.gettProductSalePrice().floatValue());
+            document.setField("t_product_pimage",product.gettProductPimage());
+            document.setField("t_product_pdesc",product.gettProductPdesc());
+
+            //存到集合中
+            docs.add(document);
+        }
+        //将集合添加到solr库里面
+        try {
+            solrClient.add(docs);
+            solrClient.commit();
+        } catch (SolrServerException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return ResultBean.success("添加到solr库成功!");
+    }
 }

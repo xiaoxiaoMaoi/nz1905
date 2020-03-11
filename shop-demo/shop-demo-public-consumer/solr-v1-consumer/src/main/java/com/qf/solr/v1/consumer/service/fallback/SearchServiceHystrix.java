@@ -16,4 +16,9 @@ public class SearchServiceHystrix implements ISearchService {
     public ResultBean addProduct(Long id) {
         return ResultBean.error("抱歉，您的网络有问题");
     }
+
+    @Override
+    public ResultBean initSolr() {
+        return ResultBean.error("抱歉，您的网络有问题");
+    }
 }

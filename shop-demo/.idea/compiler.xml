@@ -11,16 +11,17 @@
         <module name="shop-demo-shopping-service" />
         <module name="cart-v1-service" />
         <module name="shop-demo-eureka-server" />
+        <module name="back-v4-consumer" />
         <module name="shop-demo-public-consumer" />
-        <module name="shop-demo-zuul" />
+        <module name="pay-consumer" />
         <module name="common-basic" />
         <module name="cart-v2-service" />
         <module name="back-v1-service" />
         <module name="solr-v1-consumer" />
-        <module name="pay-consumer" />
+        <module name="order-v1-service" />
         <module name="common-entity" />
         <module name="regist-service" />
-        <module name="order-v1-service" />
+        <module name="back-v3-consumer" />
         <module name="back-v2-service" />
         <module name="shop-demo-shop-service" />
         <module name="solr-v2-service" />
@@ -38,10 +39,9 @@
         <module name="order-v2-consumer" />
         <module name="back-v4-service" />
         <module name="shop-demo-shopping-consumer" />
-        <module name="back-v4-consumer" />
+        <module name="shop-demo-zuul" />
         <module name="shop-demo-config-server" />
         <module name="cart-v1-consumer" />
-        <module name="back-v3-consumer" />
         <module name="solr-v2-consumer" />
       </profile>
     </annotationProcessing>

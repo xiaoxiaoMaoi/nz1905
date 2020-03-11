@@ -16,6 +16,7 @@
   <sql id="Base_Column_List">
     id, uname, password, phone, email, flag, create_time, create_user, update_time, update_user
   </sql>
+<<<<<<< HEAD
   <!--<select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -149,4 +150,6 @@
       update_user = #{updateUser,jdbcType=BIGINT}
     where id = #{id,jdbcType=BIGINT}
   </update>-->
+=======
+>>>>>>> 4aaafc8f71f28221d738447983d1b0c30126225b
 </mapper>

@@ -19,6 +19,7 @@
   <sql id="Blob_Column_List">
     pdesc
   </sql>
+<<<<<<< HEAD
   <!--<select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />
@@ -142,4 +143,6 @@
       update_user = #{updateUser,jdbcType=BIGINT}
     where id = #{id,jdbcType=BIGINT}
   </update>-->
+=======
+>>>>>>> 4aaafc8f71f28221d738447983d1b0c30126225b
 </mapper>

@@ -3,7 +3,7 @@ package com.qf.mapper;
 import com.qf.entity.TProduct;
 import tk.mybatis.mapper.common.Mapper;
 
-public interface ProductMapper extends Mapper<TProduct> {
+public interface TProductMapper extends Mapper<TProduct> {
     int deleteByPrimaryKey(Long pid);
 
     int insert(TProduct record);

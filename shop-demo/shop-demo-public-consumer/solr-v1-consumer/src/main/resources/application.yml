@@ -1,13 +1,13 @@
 spring:
   application:
     name: solr-v1-consumer
-  redis:
-    host: 192.168.236.130
-    port: 6379
-    password: 123456
-    jedis:
-      pool:
-        max-active: 20
+#  redis:
+#    host: 192.168.236.130
+#    port: 6379
+#    password: 123456
+#    jedis:
+#      pool:
+#        max-active: 20
 
 server:
   port: 7765

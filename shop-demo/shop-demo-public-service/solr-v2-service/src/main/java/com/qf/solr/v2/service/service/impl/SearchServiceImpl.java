@@ -6,6 +6,7 @@ import com.qf.execption.NZExecption;
 import com.qf.mapper.TProductDTOMapper;
 import com.qf.mapper.TProductMapper;
 import com.qf.solr.v2.service.service.ISearchService;
+import com.qf.vo.ResultBean;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
@@ -74,7 +75,7 @@ public class SearchServiceImpl implements ISearchService {
     }
 
     @Override
-    public PageInfo<TProductDTO> searchByKeyWord(Integer pageNum,Integer pageSize,String keyWord) {
+    public ResultBean searchByKeyWord(Integer pageNum, Integer pageSize, String keyWord) {
         SolrQuery solrQuery=new SolrQuery();
         if (!StringUtils.isEmpty(keyWord)){
             solrQuery.setQuery(keyWord);
@@ -134,6 +135,6 @@ public class SearchServiceImpl implements ISearchService {
         pageInfo.setNavigatePages(5);
 
 
-        return pageInfo;
+        return new ResultBean(0,"高亮查询成功",pageInfo);
     }
 }

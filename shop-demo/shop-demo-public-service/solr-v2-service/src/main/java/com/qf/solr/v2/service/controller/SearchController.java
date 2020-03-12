@@ -7,8 +7,8 @@ import com.qf.solr.v2.service.service.ISearchService;
 import com.qf.vo.ResultBean;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,8 +16,8 @@ import java.util.List;
  * @Author Ray.Cheng
  * @Date 2020/3/11
  */
-@RestController
-@RequestMapping("/search")
+@Controller
+@RequestMapping("search")
 public class SearchController {
 
     @Autowired
@@ -25,16 +25,19 @@ public class SearchController {
 
 
 
-    @RequestMapping("/initData")
+    @RequestMapping("initData")
+    @ResponseBody
     public ResultBean initDataToSolr(){
         List<TProductDTO> productDTOList=searchService.initDataToSolr();
         return new ResultBean(0,"全量复制至solr搜引库成功",productDTOList);
     }
 
-    @RequestMapping("/keyWord")
-    public PageInfo<TProductDTO>  searchByKeyWord(Integer pageNum,Integer pageSize,String keyWord){
+    @RequestMapping("keyWord")
+    public ResultBean searchByKeyWord(@RequestParam Integer pageNum, @RequestParam Integer pageSize, @RequestParam String keyWord){
 
-        return searchService.searchByKeyWord(pageNum,pageSize,keyWord);
+        ResultBean resultBean = searchService.searchByKeyWord(pageNum, pageSize, keyWord);
+        System.out.println(resultBean.getData());
+        return resultBean;
 
     }
 

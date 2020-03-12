@@ -17,7 +17,7 @@ import java.util.List;
  * @Date 2020/3/11
  */
 @Controller
-@RequestMapping("/search")
+@RequestMapping("search")
 public class SearchController {
 
     @Autowired
@@ -25,17 +25,21 @@ public class SearchController {
 
 
 
-    @RequestMapping("/initData")
+    @RequestMapping("initData")
     @ResponseBody
     public ResultBean initDataToSolr(){
-        List<TProductDTO> productDTOList=searchService.initDataToSolr();
-        return new ResultBean(0,"全量复制至solr搜引库成功",productDTOList);
+        ResultBean resultBean=searchService.initDataToSolr();
+        return new ResultBean(0,"全量复制至solr搜引库成功",resultBean.getData());
     }
 
-    @RequestMapping("/keyWord/{pageNum}/{pageSize}")
-        public String searchByKeyWord(@PathVariable Integer pageNum, @PathVariable Integer pageSize,@RequestParam String keyWord,Model model){
-        PageInfo<TProductDTO> pageInfo= searchService.searchByKeyWord(pageNum,pageSize,keyWord);
-        model.addAttribute("pageInfo",pageInfo);
+    @RequestMapping("keyWord/{pageIndex}/{pagesSize}")
+    public String searchByKeyWord(@PathVariable String pageIndex, @PathVariable String pagesSize,@RequestParam String keyWord,Model model){
+        Integer pageNum=Integer.parseInt(pageIndex);
+        Integer pageSize=Integer.parseInt(pagesSize);
+        System.out.println(pageNum);
+        ResultBean resultBean= searchService.searchByKeyWord(pageNum,pageSize,keyWord);
+        model.addAttribute("pageInfo",resultBean.getData());
+        System.out.println(resultBean.getData());
         return "search";
 
     }

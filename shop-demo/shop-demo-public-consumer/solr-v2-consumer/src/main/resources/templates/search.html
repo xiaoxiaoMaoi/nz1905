@@ -1,7 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 	<head>
+		<base href="/"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -162,167 +163,14 @@
 								<div class="clear"></div>
 
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
-									<li>
+									<li th:each="product:${pageInfo.list}">
 										<div class="i-pic limit">
-											<img src="images/imgsearch1.jpg" />											
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
+											<img src="images/imgsearch1.jpg" th:src="${product.image}" />
+											<p class="title fl" th:utext="${product.name}">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
+											<p class="title fl" th:utext="${product.salePoint}">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
 											<p class="price fl">
 												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
+												<strong th:text="${product.price}">56.90</strong>
 											</p>
 											<p class="number fl">
 												销量<span>1110</span>
@@ -382,11 +230,12 @@
 							<!--分页 -->
 							<ul class="am-pagination am-pagination-right">
 								<li class="am-disabled"><a href="#">&laquo;</a></li>
-								<li class="am-active"><a href="#">1</a></li>
+
+								<li th:each="num:${pageInfo.navigatepageNums}" th:class="${num==pageInfo.pageNum?'am-active':''}"><a href="#" th:href="|search/keyWord/${num}/${pageInfo.pageSize}?keyword=${keyword}|" th:text="${num}">1</a></li>
+
+								<!--<li class="am-active"><a href="#">1</a></li>
 								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">5</a></li>
+								<li><a href="#">3</a></li>-->
 								<li><a href="#">&raquo;</a></li>
 							</ul>
 

@@ -14,5 +14,5 @@ import java.util.List;
 public interface ISearchService {
     List<TProductDTO> initDataToSolr();
 
-    PageInfo<TProductDTO> searchByKeyWord(Integer pageNum,Integer pageSize,String keyWord);
+    ResultBean searchByKeyWord(Integer pageNum,Integer pageSize,String keyWord);
 }

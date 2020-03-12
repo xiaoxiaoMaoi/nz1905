@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RegistServiceImpl implements IReistService {
+public class RegistServiceImpl implements IRegistService {
 
     @Autowired
     TUserMapper mapper;
@@ -24,5 +24,5 @@ public class RegistServiceImpl implements IReistService {
         mapper.insert(user);
         return ResultBean.success("注册成功");
     }
-g
+
 }

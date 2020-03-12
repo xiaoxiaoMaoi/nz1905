@@ -16,12 +16,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="common-entity" />
     <orderEntry type="module" module-name="common-basic" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:fluent-hc:4.5.5" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.5.5" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.22" level="project" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring-boot-starter:2.1.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.1.1.RELEASE" level="project" />

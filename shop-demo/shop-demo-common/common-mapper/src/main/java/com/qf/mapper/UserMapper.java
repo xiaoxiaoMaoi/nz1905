@@ -16,5 +16,6 @@ public interface UserMapper extends Mapper<TUser> {
 
     int updateByPrimaryKey(TUser record);
 
+    TUser selectByUsername(String username);
     //以上请忽略
 }

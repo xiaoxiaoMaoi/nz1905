@@ -6,7 +6,8 @@ package com.qf.regist.service.service.impl;/*
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TUser;
-import com.qf.mapper.UserMapper;
+import com.qf.mapper.TUserMapper;
+
 import com.qf.regist.service.service.IUserService;
 import com.qf.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements IUserService{
     @Autowired
-    UserMapper mapper;
+    TUserMapper mapper;
 
     @Autowired
     private RedisTemplate redisTemplate;

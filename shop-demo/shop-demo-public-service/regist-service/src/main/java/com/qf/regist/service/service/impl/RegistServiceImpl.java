@@ -5,16 +5,16 @@ package com.qf.regist.service.service.impl;/*
 
 import com.qf.dto.ResultBean;
 import com.qf.entity.TUser;
-import com.qf.mapper.UserMapper;
+import com.qf.mapper.TUserMapper;
 import com.qf.regist.service.service.IRegistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RegistServiceImpl implements IRegistService {
+public class RegistServiceImpl implements IReistService {
 
     @Autowired
-    UserMapper mapper;
+    TUserMapper mapper;
 
     @Override
     public ResultBean regist(String uname, String password) {
@@ -24,4 +24,5 @@ public class RegistServiceImpl implements IRegistService {
         mapper.insert(user);
         return ResultBean.success("注册成功");
     }
+g
 }

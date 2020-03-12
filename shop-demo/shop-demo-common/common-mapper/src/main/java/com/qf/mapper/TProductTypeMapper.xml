@@ -14,4 +14,5 @@
   <sql id="Base_Column_List">
     cid, cname, pid, flag, create_time, update_time, create_user, update_user
   </sql>
+
 </mapper>

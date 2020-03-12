@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.TOrderMapper">
+  <resultMap id="BaseResultMap" type="com.qf.entity.TOrder">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="account" jdbcType="VARCHAR" property="account" />
+    <result column="payType" jdbcType="INTEGER" property="paytype" />
+    <result column="carry" jdbcType="INTEGER" property="carry" />
+    <result column="rebate" jdbcType="DECIMAL" property="rebate" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="refundStatus" jdbcType="VARCHAR" property="refundstatus" />
+    <result column="amount" jdbcType="DECIMAL" property="amount" />
+    <result column="fee" jdbcType="DECIMAL" property="fee" />
+    <result column="ptotal" jdbcType="DECIMAL" property="ptotal" />
+    <result column="quantity" jdbcType="INTEGER" property="quantity" />
+    <result column="paystatus" jdbcType="VARCHAR" property="paystatus" />
+    <result column="updateAmount" jdbcType="VARCHAR" property="updateamount" />
+    <result column="expressCode" jdbcType="VARCHAR" property="expresscode" />
+    <result column="expressName" jdbcType="VARCHAR" property="expressname" />
+    <result column="otherRequirement" jdbcType="VARCHAR" property="otherrequirement" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="expressNo" jdbcType="VARCHAR" property="expressno" />
+    <result column="expressCompanyName" jdbcType="VARCHAR" property="expresscompanyname" />
+    <result column="lowStocks" jdbcType="VARCHAR" property="lowstocks" />
+    <result column="confirmSendProductRemark" jdbcType="VARCHAR" property="confirmsendproductremark" />
+    <result column="closedComment" jdbcType="VARCHAR" property="closedcomment" />
+    <result column="score" jdbcType="INTEGER" property="score" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, account, payType, carry, rebate, createdate, status, refundStatus, amount, fee, 
+    ptotal, quantity, paystatus, updateAmount, expressCode, expressName, otherRequirement, 
+    remark, expressNo, expressCompanyName, lowStocks, confirmSendProductRemark, closedComment, 
+    score
+  </sql>
+</mapper>

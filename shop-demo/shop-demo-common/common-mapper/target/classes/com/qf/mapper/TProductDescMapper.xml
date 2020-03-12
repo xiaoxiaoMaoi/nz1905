@@ -19,4 +19,5 @@
   <sql id="Blob_Column_List">
     pdesc
   </sql>
+
 </mapper>

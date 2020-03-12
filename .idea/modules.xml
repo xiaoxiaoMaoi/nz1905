@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-common/common-basic/common-basic.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-common/common-basic/common-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-common/common-entity/common-entity.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-common/common-entity/common-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-common/common-mapper/common-mapper.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-common/common-mapper/common-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/nz1905.iml" filepath="$PROJECT_DIR$/.idea/nz1905.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-public-consumer/regist-consumer/regist-consumer.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-public-consumer/regist-consumer/regist-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-public-service/regist-service/regist-service.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-public-service/regist-service/regist-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-common/shop-demo-common.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-common/shop-demo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-config-server/shop-demo-config-server.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-config-server/shop-demo-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-dependencies/shop-demo-dependencies.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-dependencies/shop-demo-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-eureka-server/shop-demo-eureka-server.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-eureka-server/shop-demo-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-public-consumer/shop-demo-public-consumer.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-public-consumer/shop-demo-public-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-public-service/shop-demo-public-service.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-public-service/shop-demo-public-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-shopping-service/shop-demo-shopping-service.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-shopping-service/shop-demo-shopping-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-demo/shop-demo-zuul/shop-demo-zuul.iml" filepath="$PROJECT_DIR$/shop-demo/shop-demo-zuul/shop-demo-zuul.iml" />
+    </modules>
+  </component>
+</project>

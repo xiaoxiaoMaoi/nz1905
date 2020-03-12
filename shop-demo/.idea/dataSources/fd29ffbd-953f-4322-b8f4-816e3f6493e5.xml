@@ -19,7 +19,7 @@
     <schema id="5" parent="1" name="jxc">
       <Collation>utf8mb4_general_ci</Collation>
     </schema>
-    <schema id="6" parent="1" name="mysql">
+    <schema id="6" parent="1" name="myshop">
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="7" parent="1" name="performance_schema">

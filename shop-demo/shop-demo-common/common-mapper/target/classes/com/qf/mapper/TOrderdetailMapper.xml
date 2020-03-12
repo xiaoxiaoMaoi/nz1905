@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.mapper.TOrderdetailMapper">
+  <resultMap id="BaseResultMap" type="com.qf.entity.TOrderdetail">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="orderID" jdbcType="INTEGER" property="orderid" />
+    <result column="productID" jdbcType="INTEGER" property="productid" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="number" jdbcType="INTEGER" property="number" />
+    <result column="productName" jdbcType="VARCHAR" property="productname" />
+    <result column="fee" jdbcType="DECIMAL" property="fee" />
+    <result column="total0" jdbcType="DECIMAL" property="total0" />
+    <result column="isComment" jdbcType="VARCHAR" property="iscomment" />
+    <result column="lowStocks" jdbcType="VARCHAR" property="lowstocks" />
+    <result column="score" jdbcType="INTEGER" property="score" />
+    <result column="specInfo" jdbcType="VARCHAR" property="specinfo" />
+    <result column="giftID" jdbcType="VARCHAR" property="giftid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, orderID, productID, price, number, productName, fee, total0, isComment, lowStocks, 
+    score, specInfo, giftID
+  </sql>
+</mapper>

@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8edfba81-e70c-4ee4-a3c5-dcb2d24fdb61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/controller/BackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,18 +104,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductDescMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
@@ -170,7 +161,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -179,13 +170,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+            <state relative-caret-position="330">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -278,9 +271,9 @@
         <option value="$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TPayMapper.xml" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/controller/BackController.java" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -330,121 +323,6 @@
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -521,6 +399,29 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -895,7 +796,7 @@
       <workItem from="1583820066862" duration="13682000" />
       <workItem from="1583912025073" duration="15369000" />
       <workItem from="1583976643074" duration="1426000" />
-      <workItem from="1583996778530" duration="3998000" />
+      <workItem from="1583996778530" duration="4585000" />
     </task>
     <task id="LOCAL-00001" summary="搜索初步，给mapper加了T开头">
       <created>1583920239003</created>
@@ -915,13 +816,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54665000" />
+    <option name="totallyTimeSpent" value="55252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="225" y="88" width="1623" height="912" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30390275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30390275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -943,7 +844,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1081254" side_tool="true" weight="0.46915168" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4996801" weight="0.32904884" />
       <window_info anchor="bottom" id="Database Changes" order="12" sideWeight="0.4996801" weight="0.32904884" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4990403" visible="true" weight="0.25192803" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4990403" visible="true" weight="0.25192803" />
       <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.1081254" side_tool="true" weight="0.7262211" />
       <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.8918746" weight="0.23650385" />
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
@@ -989,17 +890,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/fallback/SearchServiceHystrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1950">
@@ -1392,20 +1282,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/shop-demo-shopping-service/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

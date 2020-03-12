@@ -33,4 +33,7 @@
     remark, expressNo, expressCompanyName, lowStocks, confirmSendProductRemark, closedComment, 
     score
   </sql>
+  <update id="updateOrderByDel" parameterType="integer">
+    update t_order set status = cancel where id = #{id}
+  </update>
 </mapper>

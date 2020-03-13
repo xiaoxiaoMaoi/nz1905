@@ -21,6 +21,7 @@ import javax.mail.internet.MimeMessage;
 @RequestMapping("email")
 public class EmailController {
 
+    
     @Autowired
     private JavaMailSender sender;
 

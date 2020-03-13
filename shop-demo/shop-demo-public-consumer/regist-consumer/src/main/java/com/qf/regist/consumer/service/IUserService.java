@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient("regist-service")
 public interface  IUserService {
+
     @RequestMapping("user/checkLogin")
     ResultBean checkLogin(@RequestParam("username")  String username, @RequestParam("password")  String password);
 

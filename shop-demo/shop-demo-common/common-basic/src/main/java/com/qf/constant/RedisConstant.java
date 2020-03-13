@@ -10,4 +10,5 @@ public class RedisConstant {
     public static final String REGISTER_EMAIL = "register:email:";
     public static final String USER_CART_PRE = "user:cart:";
     public static final String PRODUCT_PRE = "product:";
+
 }

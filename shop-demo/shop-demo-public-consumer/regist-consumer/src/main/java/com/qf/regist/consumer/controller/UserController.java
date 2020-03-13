@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("user")
 public class UserController {
+
     @Autowired
     private IUserService userService;
 

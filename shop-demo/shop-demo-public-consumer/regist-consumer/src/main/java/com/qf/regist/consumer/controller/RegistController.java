@@ -21,7 +21,6 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("user")
 public class RegistController {
 
-
     @Autowired
     private RestTemplate restTemplate;
 

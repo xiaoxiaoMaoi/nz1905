@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ISearchService {
 
     @RequestMapping("search/query")
-    ResultBean searchByKeyword(@RequestParam String keyword);
+    ResultBean searchByKeyword(@RequestParam(value = "pageNum") Integer pageNum, @RequestParam(value = "pageSize") Integer pageSize,@RequestParam(value = "keyword") String keyword);
 
     @RequestMapping("search/addProduct")
     ResultBean addProduct(@RequestParam Long id);

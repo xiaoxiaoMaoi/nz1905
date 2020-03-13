@@ -5,7 +5,9 @@ import com.qf.solr.v1.consumer.service.ISearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -17,10 +19,10 @@ public class SearchController {
 
     @RequestMapping("query")
     @ResponseBody
-    public String searchByKeyword(String keyword, ModelMap map){
-        ResultBean resultBean = service.searchByKeyword(keyword);
+    public String searchByKeyword(@PathVariable Integer pageNum, @PathVariable Integer pageSize, @RequestParam String keyword, ModelMap map){
+        ResultBean resultBean = service.searchByKeyword(pageNum,pageSize,keyword);
         //把集合存进去，在resultBean中
-        map.put("products",resultBean.getData());
+        map.put("pageInfo",resultBean.getData());
         System.out.println(resultBean.getData());
         return "search";
     }
@@ -31,6 +33,7 @@ public class SearchController {
     }
 
     @RequestMapping("init")
+    @ResponseBody
     public ResultBean initSolr(){
         return service.initSolr();
     }

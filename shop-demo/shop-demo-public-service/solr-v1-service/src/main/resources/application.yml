@@ -5,13 +5,13 @@ spring:
   data:
     solr:
       host: http://192.168.236.130:8983/solr/ik_core
-  redis:
-    host: 192.168.236.130
-    port: 6379
-    password: 123456
-    jedis:
-      pool:
-        max-active: 20
+#  redis:
+#    host: 192.168.236.130
+#    port: 6379
+#    password: 123456
+#    jedis:
+#      pool:
+#        max-active: 20
 #  rabbitmq:
 #    host: 192.168.236.130
 #    port: 5672
@@ -19,6 +19,7 @@ spring:
 #    password: 123456
 #    virtual-host: nz1905
   datasource:
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/myshop?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: 123
@@ -30,3 +31,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+  page-size-zero: true
+  offset-as-page-num: true
+  row-bounds-with-count: true

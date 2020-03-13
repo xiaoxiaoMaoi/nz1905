@@ -1,31 +1,17 @@
 package com.qf.dto;
 
 import java.io.Serializable;
-import java.util.Arrays;
 import java.util.List;
 
 /**
  * @Author Ray.Cheng
  * @Date 2020/1/9
  */
+
 public class PageResultBean<T> implements Serializable {
     //当前页
     private int pageNum;
-
-    @Override
-    public String toString() {
-        return "PageResultBean{" +
-                "pageNum=" + pageNum +
-                ", pageSize=" + pageSize +
-                ", total=" + total +
-                ", pages=" + pages +
-                ", list=" + list +
-                ", navigatePages=" + navigatePages +
-                ", navigatepageNums=" + Arrays.toString(navigatepageNums) +
-                '}';
-    }
-
-    //页大小
+    //每页的数量
     private int pageSize;
     //总记录数
     private long total;
@@ -164,8 +150,6 @@ public class PageResultBean<T> implements Serializable {
         }
 
     }*/
-
-
 
 
 }

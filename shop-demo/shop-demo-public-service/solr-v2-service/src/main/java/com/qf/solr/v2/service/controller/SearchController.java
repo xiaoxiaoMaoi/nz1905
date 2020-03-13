@@ -33,11 +33,10 @@ public class SearchController {
     }
 
     @RequestMapping("keyWord")
+    @ResponseBody
     public ResultBean searchByKeyWord(@RequestParam Integer pageNum, @RequestParam Integer pageSize, @RequestParam String keyWord){
 
-        ResultBean resultBean = searchService.searchByKeyWord(pageNum, pageSize, keyWord);
-        System.out.println(resultBean.getData());
-        return resultBean;
+        return searchService.searchByKeyWord(pageNum, pageSize, keyWord);
 
     }
 

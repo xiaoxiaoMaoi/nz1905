@@ -6,9 +6,7 @@ import com.qf.entity.TProduct;
 import com.qf.solr.v2.consumer.service.fallback.AdminServiceHystrix;
 import com.qf.vo.ResultBean;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +22,5 @@ public interface ISearchService {
 
 
     @RequestMapping("search/keyWord")
-    ResultBean searchByKeyWord(@RequestParam(value = "pageNum") Integer pageNum, @RequestParam(value = "pageSize") Integer pageSize,@RequestParam(value = "keyWord") String keyWord);
+    ResultBean searchByKeyWord(@RequestParam("pageNum") Integer pageNum, @RequestParam("pageSize") Integer pageSize, @RequestParam("keyWord") String keyWord);
 }

@@ -57,7 +57,7 @@
 				<div class="search-bar pr">
 					<a name="index_none_header_sysc" href="#"></a>
 					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="搜索" autocomplete="off">
+						<input id="searchInput" th:value="${keyWord}" name="keyWord" type="text" placeholder="搜索" autocomplete="off">
 						<input id="ai-topsearch" class="submit am-btn"  value="搜索" index="1" type="submit">
 					</form>
 				</div>
@@ -165,12 +165,12 @@
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
 									<li th:each="product:${pageInfo.list}">
 										<div class="i-pic limit">
-											<img src="images/imgsearch1.jpg" th:src="${product.image}" />
-											<p class="title fl" th:utext="${product.name}">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="title fl" th:utext="${product.salePoint}">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
+											<img src="images/imgsearch1.jpg" th:src="${product.pimage}" />
+											<p class="title fl" th:utext="${product.pname}">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
+											<p class="title fl" th:utext="${product.pdesc}">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
 											<p class="price fl">
 												<b>¥</b>
-												<strong th:text="${product.price}">56.90</strong>
+												<strong th:text="${product.salePrice}">56.90</strong>
 											</p>
 											<p class="number fl">
 												销量<span>1110</span>
@@ -231,7 +231,7 @@
 							<ul class="am-pagination am-pagination-right">
 								<li class="am-disabled"><a href="#">&laquo;</a></li>
 
-								<li th:each="num:${pageInfo.navigatepageNums}" th:class="${num==pageInfo.pageNum?'am-active':''}"><a href="#" th:href="|search/keyWord/${num}/${pageInfo.pageSize}?keyword=${keyword}|" th:text="${num}">1</a></li>
+								<li th:each="num:${pageInfo.navigatepageNums}" th:class="${num==pageInfo.pageNum?'am-active':''}"><a href="#" th:href="|search/keyWord/${num}/${pageInfo.pageSize}?keyWord=${keyWord}|" th:text="${num}">1</a></li>
 
 								<!--<li class="am-active"><a href="#">1</a></li>
 								<li><a href="#">2</a></li>

@@ -27,6 +27,12 @@
             <groupId>com.qf</groupId>
             <artifactId>common-basic</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.qf</groupId>
+                    <artifactId>common-entity</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.qf</groupId>

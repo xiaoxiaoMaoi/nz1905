@@ -1,7 +1,4 @@
-package com.qf.util;/*
-    @auter wwx
-    @date 2020/3/11
-*/
+package com.qf.util;
 
 public class StringUtil {
 

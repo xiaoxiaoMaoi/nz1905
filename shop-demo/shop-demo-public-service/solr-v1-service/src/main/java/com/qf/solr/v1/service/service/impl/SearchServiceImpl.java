@@ -153,10 +153,9 @@ public class SearchServiceImpl implements ISearchService {
         try {
             solrClient.add(docs);
             solrClient.commit();
-        } catch (SolrServerException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            return ResultBean.error("添加到solr库失败!");
         }
 
 

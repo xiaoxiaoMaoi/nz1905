@@ -1,12 +1,13 @@
 package com.qf.back.v2.consumer.service;
 
+import com.qf.back.v2.consumer.service.fallback.BackServiceHystrix;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TOrder;
 import com.qf.entity.TProduct;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(value = "back-v2-service")
+@FeignClient(value = "back-v2-service",fallback = BackServiceHystrix.class)
 public interface IBackService {
 
     @RequestMapping("back/login")

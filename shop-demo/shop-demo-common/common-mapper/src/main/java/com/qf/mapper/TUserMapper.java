@@ -8,5 +8,6 @@ public interface TUserMapper extends Mapper<TUser> {
 
 
 
+    
     TUser selectByUsername(String username);
 }

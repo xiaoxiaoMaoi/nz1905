@@ -6,7 +6,7 @@ import com.qf.entity.TProduct;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient
+@FeignClient(value = "back-v2-service")
 public interface IBackService {
 
     @RequestMapping("back/login")

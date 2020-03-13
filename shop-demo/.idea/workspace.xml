@@ -2,7 +2,302 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8edfba81-e70c-4ee4-a3c5-dcb2d24fdb61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shop-demo-common/common-mapper/target/classes/com/qf/mapper/TOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-common/common-mapper/target/classes/com/qf/mapper/TOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/bean/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/bean/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/bean/CartInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/vo/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.flat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.flat.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/amazeui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/app-icon72x72@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-chrome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-firefox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-ie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-opera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/admin-safari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/adminPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/blogPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/landing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/landingPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/loginPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/examples/sidebarPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/i/startup-640x1096.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.ie8polyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.ie8polyfill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.widgets.helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/amazeui.widgets.helper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/handlebars.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/AmazeUI-2.4.2/assets/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/chongzhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/ibar_sprites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/logobar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/logobig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/no-img_mid_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/wdsc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/images/weixin_code_145.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/js/jquery-1.7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/js/jquery-1.9.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/basic/js/quick_links.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/addstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/appstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/bilstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/blogstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/blstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/bostyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/cartstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/cmstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/colstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/cpstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/dlstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/footstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/hmstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/infstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/jsstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/lostyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/newstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/optstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/orstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/personal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/refstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/seastyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/sortstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/stepstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/sustyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/css/systyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/-0-saturn_solar.jpg_220x220.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/0-item_pic.jpg_220x220.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/01_mid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/01_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/02_mid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/02_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/03_mid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/03_small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/1-item_pic.jpg_220x220.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/1_160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/2016.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/3CoOkxrFOP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/556.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/557.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/559.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/566.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/566fda5cN4b8a1675.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/62988.jpg_80x80.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/65.jpg_120x120xz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/72h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/88.jpg_120x120xz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/T13iv.XiFdXXa94Hfd-32-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/TB102.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/TB1SSK7JpXXXXXCXXXXXXXXXXXX-800-600.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/TB1_pic.jpg_200x200.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/TJ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/TJ2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/YXARdXxj5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/act1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/act2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/act3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/activity.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/activity1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/activity2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/activity3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ad8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/addbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/addicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/addicon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/addicon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/advTip.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/bamboo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/bamboo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/blog09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/bonus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/browse1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/cake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/cake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/candy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/candy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/cardbg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/checkbox.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/chocolate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/chocolate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/chongzhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/clockbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/combo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/comment.jpg_400x400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/cookies.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/cookies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/coupon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/coupon2015.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/coupon20150805.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/couponli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/cp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/cp2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/day-to.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/extra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/fish.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/fish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/getAvatar.do.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/gift_intro_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/gift_stamp_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/gift_stamp_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/gift_stamp_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/gift_stamp_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/gift_stamp_31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/header-bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/huismall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/hwbn40x40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/ibar_sprites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/icon-sale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconbig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconfont-bad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconfont-badon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconfont-evaluate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconfont-good.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconfont-middle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconsmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconsmall0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconsmall1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconsmall2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/iconsmall3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/imgsearch1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/index_ico_png32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/item-pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/kouhong.jpg_80x80.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/kuaidi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/list1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/listsmall1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/logobig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/logobig1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/logobig2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/mansmall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/meat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/meat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/moneysmall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/mygift_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/navce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/navsmall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/no-img_mid_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/nut.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/nut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/package.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/package.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/pay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/peraddbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/peraddress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/peraddressbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/receive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/refund.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/return-process-cd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/row1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/row2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/row3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/row4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/sale-t.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/sale-t_clock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/sale1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/sale2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/sale3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/scoll1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/scoll2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/send.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/side.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/songzi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/sys_item_selected.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tj1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tj2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tw1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tw2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tw3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tw4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tw5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tw6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/tw7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/wallet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/wangyin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/wdsc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/weixin_code_145.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/weizhifu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/zhifubao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/images/图标.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/js/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/js/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/js/jquery.flexslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/js/jquery.imagezoom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/js/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/static/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-common/common-basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-common/common-basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/ResultBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/ResultBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/TProductSearchDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/TProductSearchDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/service/IBackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/service/IBackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-consumer/cart-v2-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-consumer/cart-v2-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/ISearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/ISearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-service/cart-v2-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-service/cart-v2-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/ISearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/ISearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/impl/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/impl/SearchServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,123 +390,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/controller/BackController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" selection-start-line="8" selection-end-line="32" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/BackV2ConsumerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/service/IBackService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/controller/BackController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#1530#1531#0" expanded="true" />
-                <element signature="e#1577#1578#0" expanded="true" />
-                <element signature="e#1653#1654#0" expanded="true" />
-                <element signature="e#1679#1680#0" expanded="true" />
-                <element signature="e#2111#2112#0" expanded="true" />
-                <element signature="e#2140#2141#0" expanded="true" />
-                <element signature="e#2277#2278#0" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
-                <element signature="e#2444#2445#0" expanded="true" />
-                <element signature="e#2493#2494#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -241,20 +420,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/fallback/AdminServiceHystrix.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/SolrV1ConsumerApplication.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/ISearchService.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/impl/SearchServiceImpl.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/ISearchService.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/fallback/SearchServiceHystrix.java" />
-        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/pom.xml" />
         <option value="$PROJECT_DIR$/shop-demo-common/common-mapper/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/TProductSearchDTO.java" />
         <option value="$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductSearchDTOMapper.java" />
         <option value="$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductDescMapper.java" />
         <option value="$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductMapper.java" />
@@ -284,14 +450,27 @@
         <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/PageResultBean.java" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java" />
         <option value="$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderMapper.java" />
         <option value="$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderMapper.xml" />
         <option value="$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/controller/BackController.java" />
-        <option value="$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/service/IBackService.java" />
         <option value="$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/controller/BackController.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/service/IBackService.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/cart-v2-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/cart-v2-consumer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/PageResultBean.java" />
+        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/bean/CartInfo.java" />
+        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/vo/CartItem.java" />
+        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/ResultBean.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/ISearchService.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/TProductSearchDTO.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/impl/SearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/ISearchService.java" />
+        <option value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/controller/SearchController.java" />
       </list>
     </option>
   </component>
@@ -320,8 +499,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="225" />
-    <option name="y" value="88" />
+    <option name="x" value="316" />
+    <option name="y" value="125" />
     <option name="width" value="1623" />
     <option name="height" value="912" />
   </component>
@@ -333,7 +512,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,16 +558,6 @@
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="common-entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,16 +588,6 @@
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-entity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
               <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -442,52 +600,34 @@
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-common" type="462c0819:PsiDirectoryNode" />
-              <item name="common-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -496,25 +636,20 @@
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -522,7 +657,7 @@
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -531,7 +666,7 @@
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -541,103 +676,242 @@
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
               <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
-              <item name="back-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="cart-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v1-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop-demo-public-service" type="462c0819:PsiDirectoryNode" />
+              <item name="solr-v2-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -653,21 +927,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="G:/相关文件/mybatis-generator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-service\src\main\resources\static\AmazeUI-2.4.2" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-service\src\main\resources\static" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-service\src\main\resources\templates" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-consumer\src\main\resources\static\AmazeUI-2.4.2" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-consumer\src\main\resources\templates" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-public-consumer\solr-v1-consumer\src\main\resources\templates" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-public-consumer\solr-v1-consumer\src\main\resources\static" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-common\common-basic\src\main\java\com\qf\bean" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-common\common-basic\src\main\java\com\qf\vo" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-common\common-basic\src\main\java\com\qf\dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.qf.dto" />
@@ -676,12 +950,12 @@
       <recent name="com.qf.shop.demo.zuul.filter" />
       <recent name="com.qf.shop.demo.zuul" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-common\common-basic\src\main\java\com\qf\dto" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-common\common-mapper\src\main\java\com\qf\mapper" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-common\common-entity\src\main\java\com\qf\entity" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-public-consumer\solr-v1-consumer\src\main\java\com\qf\solr\v1\consumer\service" />
-      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-public-consumer\back-v4-consumer\src\main\java\com\qf\back\v4\consumer" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-public-consumer\solr-v1-consumer\src\main\resources\static" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-service\src\main\resources\static\AmazeUI-2.4.2" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-service\src\main\resources\static" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-service\src\main\resources\templates" />
+      <recent name="G:\java.qf\nz1905\shop-demo\shop-demo-shopping-consumer\src\main\resources\static\AmazeUI-2.4.2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -935,7 +1209,8 @@
       <workItem from="1583976643074" duration="1426000" />
       <workItem from="1583996778530" duration="5507000" />
       <workItem from="1584010441108" duration="526000" />
-      <workItem from="1584014071402" duration="4681000" />
+      <workItem from="1584014071402" duration="5278000" />
+      <workItem from="1584082333520" duration="5156000" />
     </task>
     <task id="LOCAL-00001" summary="搜索初步，给mapper加了T开头">
       <created>1583920239003</created>
@@ -962,12 +1237,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61381000" />
+    <option name="totallyTimeSpent" value="67134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="225" y="88" width="1623" height="912" extended-state="0" />
+    <frame x="316" y="125" width="1623" height="912" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3115803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31541908" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -989,7 +1264,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1081254" side_tool="true" weight="0.46915168" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4996801" weight="0.32904884" />
       <window_info anchor="bottom" id="Database Changes" order="12" sideWeight="0.4996801" weight="0.32904884" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4990403" visible="true" weight="0.33676094" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4990403" visible="true" weight="0.20565553" />
       <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.1081254" side_tool="true" weight="0.7262211" />
       <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.8918746" weight="0.23650385" />
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
@@ -1036,210 +1311,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/impl/SearchServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3900">
-          <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductSearchDTOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductTypeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductSearchDTOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductDTOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TOrderdetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TOrderlog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TOrderpay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TOrdership.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderdetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TProductDescMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderdetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderlogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderpayMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderpayMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrdershipMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrdershipMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TPayMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TPay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1273,23 +1344,6 @@
     <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -1301,37 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/vo/ResultBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/ResultBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/PageResultBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1362,13 +1385,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3a66616f-2d46-4579-90b1-9c7d87fb474b/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1376,39 +1392,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/BackV2ConsumerApplication.java">
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TOrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" selection-start-line="8" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1140">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/controller/BackController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="330">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1416,50 +1409,300 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/service/IBackService.java">
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/IBackService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        <state relative-caret-position="180">
+          <caret line="8" selection-start-line="8" selection-end-line="32" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/controller/BackController.java">
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/back-v2-service/src/main/java/com/qf/back/v2/service/service/impl/BackServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="3060">
+          <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/BackV2ConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/controller/BackController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
             <element signature="e#2140#2141#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="true" />
-            <element signature="e#2306#2307#0" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2493#2494#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="630">
           <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/back-v2-consumer/src/main/java/com/qf/back/v2/consumer/service/IBackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-879">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-mapper/src/main/java/com/qf/mapper/TUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/cart-v2-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/PageResultBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/cart-v2-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-entity/src/main/java/com/qf/entity/TOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/vo/CartItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/bean/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/bean/CartInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-eureka-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/bean/Area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/ResultBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/vo/ResultBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v2-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/TProductDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-common/common-basic/src/main/java/com/qf/dto/TProductSearchDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v2-service/src/main/java/com/qf/solr/v2/service/service/ISearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v2-service/src/main/java/com/qf/solr/v2/service/service/impl/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/ISearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v2-service/src/main/java/com/qf/solr/v2/service/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="35" column="129" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v2-consumer/src/main/java/com/qf/solr/v2/consumer/service/ISearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-service/solr-v1-service/src/main/java/com/qf/solr/v1/service/service/impl/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v2-consumer/src/main/resources/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4770" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/resources/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/service/ISearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v2-consumer/src/main/java/com/qf/solr/v2/consumer/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop-demo-public-consumer/solr-v1-consumer/src/main/java/com/qf/solr/v1/consumer/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1477,6 +1720,19 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>common-mapper</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -34,14 +34,9 @@ public class SearchController {
 
     @RequestMapping("keyWord/{pageNum}/{pageSize}")
     public String searchByKeyWord(@PathVariable Integer pageNum, @PathVariable Integer pageSize,@RequestParam String keyWord,Model model){
-//        Integer pageNum=Integer.parseInt(pageIndex);
-//        Integer pageSize=Integer.parseInt(pagesSize);
-        System.out.println(pageNum);
         ResultBean resultBean= searchService.searchByKeyWord(pageNum,pageSize,keyWord);
         model.addAttribute("pageInfo",resultBean.getData());
         model.addAttribute("keyWord",keyWord);
-        System.out.println(resultBean.getData());
-        System.out.println("++++++++++++++++++++++++++++");
         return "search";
 
     }

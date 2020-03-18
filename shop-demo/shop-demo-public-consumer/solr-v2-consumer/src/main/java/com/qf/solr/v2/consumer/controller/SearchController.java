@@ -32,14 +32,11 @@ public class SearchController {
         return new ResultBean(0,"全量复制至solr搜引库成功",resultBean.getData());
     }
 
-    @RequestMapping("keyWord/{pageIndex}/{pagesSize}")
-    public String searchByKeyWord(@PathVariable String pageIndex, @PathVariable String pagesSize,@RequestParam String keyWord,Model model){
-        Integer pageNum=Integer.parseInt(pageIndex);
-        Integer pageSize=Integer.parseInt(pagesSize);
-        System.out.println(pageNum);
+    @RequestMapping("keyWord/{pageNum}/{pageSize}")
+    public String searchByKeyWord(@PathVariable Integer pageNum, @PathVariable Integer pageSize,@RequestParam String keyWord,Model model){
         ResultBean resultBean= searchService.searchByKeyWord(pageNum,pageSize,keyWord);
         model.addAttribute("pageInfo",resultBean.getData());
-        System.out.println(resultBean.getData());
+        model.addAttribute("keyWord",keyWord);
         return "search";
 
     }

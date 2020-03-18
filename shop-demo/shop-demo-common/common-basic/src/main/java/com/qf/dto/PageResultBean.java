@@ -3,6 +3,11 @@ package com.qf.dto;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * @Author Ray.Cheng
+ * @Date 2020/1/9
+ */
+
 public class PageResultBean<T> implements Serializable {
     //当前页
     private int pageNum;
@@ -64,6 +69,7 @@ public class PageResultBean<T> implements Serializable {
     }
 
     public void setNavigatePages(int navigatePages) {
+
         this.navigatePages = navigatePages;
         this.calcNavigatepageNums();
     }
@@ -111,4 +117,39 @@ public class PageResultBean<T> implements Serializable {
             }
         }
     }
+    /*private void calcNavigatepageNums() {
+        int i;
+        if (this.pages <= this.navigatePages) {
+            this.navigatepageNums = new int[this.pages];
+
+            for(i = 0; i < this.pages; ++i) {
+                this.navigatepageNums[i] = i + 1;
+            }
+        } else {
+            this.navigatepageNums = new int[this.navigatePages];
+            i = this.pageNum - this.navigatePages / 2;
+            int endNum = this.pageNum + this.navigatePages / 2;
+            int i;
+            if (i < 1) {
+                i = 1;
+
+                for(i = 0; i < this.navigatePages; ++i) {
+                    this.navigatepageNums[i] = i++;
+                }
+            } else if (endNum > this.pages) {
+                endNum = this.pages;
+
+                for(i = this.navigatePages - 1; i >= 0; --i) {
+                    this.navigatepageNums[i] = endNum--;
+                }
+            } else {
+                for(i = 0; i < this.navigatePages; ++i) {
+                    this.navigatepageNums[i] = i++;
+                }
+            }
+        }
+
+    }*/
+
+
 }

@@ -1,6 +1,8 @@
 package com.qf.solr.v2.service.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.qf.dto.PageResultBean;
 import com.qf.dto.TProductDTO;
 import com.qf.execption.NZExecption;
 import com.qf.mapper.TProductDTOMapper;
@@ -91,15 +93,17 @@ public class SearchServiceImpl implements ISearchService {
 
         solrQuery.setStart((pageNum-1)*pageSize);
         solrQuery.setRows(pageSize);
-        List<TProductDTO> productDTOList=new ArrayList<>();
+        List<TProductDTO> productDTOList=null;
         long totalCount=0L;
-        PageInfo<TProductDTO> pageInfo= new PageInfo<>();
+        PageResultBean<TProductDTO> pageResultBean=new PageResultBean<>();
         try {
             QueryResponse queryResponse=solrClient.query(solrQuery);
 
             SolrDocumentList results = queryResponse.getResults();
 
             totalCount=results.getNumFound();
+
+            productDTOList=new ArrayList<>(results.size());
 
             Map<String, Map<String, List<String>>> highlighting = queryResponse.getHighlighting();
             for (SolrDocument result : results) {
@@ -126,15 +130,14 @@ public class SearchServiceImpl implements ISearchService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        pageResultBean.setPageNum(pageNum);
+        pageResultBean.setPageSize(pageSize);
+        pageResultBean.setTotal(totalCount);
+        pageResultBean.setPages((int) (totalCount%pageSize==0?(totalCount/pageSize):(totalCount/pageSize)+1));
+        pageResultBean.setList(productDTOList);
+        pageResultBean.setNavigatePages(5);
 
-        pageInfo.setPageNum(pageNum);
-        pageInfo.setPageSize(pageSize);
-        pageInfo.setTotal(totalCount);
-        pageInfo.setPages((int) (totalCount%pageSize==0?(totalCount/pageSize):(totalCount/pageSize)+1));
-        pageInfo.setList(productDTOList);
-        pageInfo.setNavigatePages(5);
 
-
-        return new ResultBean(0,"高亮查询成功",pageInfo);
+        return new ResultBean(0,"高亮查询成功",pageResultBean);
     }
 }

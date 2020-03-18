@@ -19,4 +19,7 @@
 <select id="selectByUsername" resultType="com.qf.entity.TUser">
   select * from t_user where uname=#{username}
 </select>
+  <select id="checkLogin" resultType="com.qf.entity.TUser">
+  select * from t_user where uname=#{username} and password=#{password}
+</select>
 </mapper>

@@ -1,5 +1,6 @@
 package com.qf.back.v2.service.service;
 
+import com.qf.dto.PageBean;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TOrder;
 import com.qf.entity.TProduct;
@@ -10,7 +11,7 @@ public interface IBackService {
 
     //-------------以下是订单的操作------------------
 
-    ResultBean orderList(String account);
+    ResultBean orderList(PageBean pageBean,String account);
 
     ResultBean updateOrderInit(Integer id);
 
@@ -22,7 +23,7 @@ public interface IBackService {
 
     //-------------以下是商品的操作------------------
 
-    ResultBean productList(String name);
+    ResultBean productList(PageBean pageBean,String pname,Integer typeId);
 
     ResultBean updateProductInit(Integer id);
 
@@ -30,5 +31,8 @@ public interface IBackService {
 
     ResultBean addProduct(TProduct product);
 
+    ResultBean addProductInit(Integer id);
+
     ResultBean deleteProductById(Integer id);
+
 }

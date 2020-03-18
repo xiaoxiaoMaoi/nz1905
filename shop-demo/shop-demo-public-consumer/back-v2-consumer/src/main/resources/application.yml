@@ -2,6 +2,10 @@
 spring:
   application:
     name: back-v2-consumer
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
   redis:
     host: 192.168.236.130
     port: 6379
@@ -9,6 +13,7 @@ spring:
     jedis:
       pool:
         max-active: 20
+
 
 server:
   port: 9767
@@ -18,3 +23,12 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+hystrix:
+  metrics:
+    enabled: true
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

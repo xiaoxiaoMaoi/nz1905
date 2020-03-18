@@ -1,6 +1,7 @@
 package com.qf.back.v2.consumer.service.fallback;
 
 import com.qf.back.v2.consumer.service.IBackService;
+import com.qf.dto.PageBean;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TOrder;
 import com.qf.entity.TProduct;
@@ -14,7 +15,7 @@ public class BackServiceHystrix implements IBackService {
     }
 
     @Override
-    public ResultBean orderList(String account) {
+    public ResultBean orderList(PageBean pageBean, String account) {
         return ResultBean.error("抱歉，您的网络有问题");
     }
 
@@ -39,7 +40,7 @@ public class BackServiceHystrix implements IBackService {
     }
 
     @Override
-    public ResultBean productList(String name) {
+    public ResultBean productList(PageBean pageBean,String pname,Integer typeId) {
         return ResultBean.error("抱歉，您的网络有问题");
     }
 
@@ -55,6 +56,11 @@ public class BackServiceHystrix implements IBackService {
 
     @Override
     public ResultBean addProduct(TProduct product) {
+        return ResultBean.error("抱歉，您的网络有问题");
+    }
+
+    @Override
+    public ResultBean addProductInit(Integer id) {
         return ResultBean.error("抱歉，您的网络有问题");
     }
 

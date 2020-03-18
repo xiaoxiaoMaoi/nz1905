@@ -1,14 +1,20 @@
 package com.qf.back.v2.service.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.qf.back.v2.service.service.IBackService;
+import com.qf.dto.PageBean;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TOrder;
 import com.qf.entity.TProduct;
+import com.qf.entity.TUser;
 import com.qf.mapper.TOrderMapper;
 import com.qf.mapper.TProductMapper;
 import com.qf.mapper.TUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class BackServiceImpl implements IBackService {
@@ -24,15 +30,23 @@ public class BackServiceImpl implements IBackService {
 
     @Override
     public ResultBean login(String username, String password) {
-
-        return null;
+        TUser user = userMapper.checkLogin(username,password);
+        if (user != null) {
+            return ResultBean.success(user,"登录成功！");
+        }
+        return ResultBean.error("登录失败！");
     }
 
     //-------------以下是订单的操作------------------
 
     @Override
-    public ResultBean orderList(String account) {
-        return null;
+    public ResultBean orderList(PageBean pageBean,String account) {
+        PageHelper.startPage(pageBean.getCurrentPage(),pageBean.getPageSize());
+//        Example example = new Example(TOrder.class);
+//        Example.Criteria criteria = example.createCriteria();
+//        criteria.andEqualTo("account",account);
+        List<TOrder> orders =orderMapper.selectOrderList(account);
+        return ResultBean.success(new PageInfo<>(orders),"搜索用户成功！");
     }
 
     @Override
@@ -74,8 +88,13 @@ public class BackServiceImpl implements IBackService {
     //-------------以下是商品的操作------------------
 
     @Override
-    public ResultBean productList(String name) {
-        return null;
+    public ResultBean productList(PageBean pageBean,String pname,Integer typeId) {
+        PageHelper.startPage(pageBean.getCurrentPage(),pageBean.getPageSize());
+//        Example example = new Example(TProduct.class);
+//        Example.Criteria criteria = example.createCriteria();
+//        criteria.andEqualTo("pname",pname);
+        List<TProduct> products =productMapper.selectProductList(pname,typeId);
+        return ResultBean.success(new PageInfo<>(products),"搜索商品成功！");
     }
 
     @Override
@@ -101,6 +120,15 @@ public class BackServiceImpl implements IBackService {
         int result = productMapper.insertSelective(product);
         if (result != 0) {
             return ResultBean.success("添加商品成功!");
+        }
+        return ResultBean.error("添加商品失败！");
+    }
+
+    @Override
+    public ResultBean addProductInit(Integer id) {
+        TUser user = userMapper.selectByPrimaryKey(id);
+        if (user != null) {
+            return ResultBean.success(user,"添加商品成功!");
         }
         return ResultBean.error("添加商品失败！");
     }

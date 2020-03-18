@@ -20,6 +20,17 @@
     create_user, update_user
   </sql>
 
+  <select id="selectProductList" resultMap="BaseResultMap">
+    select * from t_product
+    <where>
+      <if test="pname != null and pname != ''">
+        and pname =#{pname}
+      </if>
+      <if test="typeId != null and typeId != ''">
+        and type_id =#{typeId}
+      </if>
+    </where>
+  </select>
 
 
 

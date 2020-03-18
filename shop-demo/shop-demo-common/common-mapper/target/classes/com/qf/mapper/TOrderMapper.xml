@@ -9,22 +9,22 @@
     <result column="rebate" jdbcType="DECIMAL" property="rebate" />
     <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
     <result column="status" jdbcType="VARCHAR" property="status" />
-    <result column="refundStatus" jdbcType="VARCHAR" property="refundstatus" />
+    <result column="refundStatus" jdbcType="VARCHAR" property="refundStatus" />
     <result column="amount" jdbcType="DECIMAL" property="amount" />
     <result column="fee" jdbcType="DECIMAL" property="fee" />
     <result column="ptotal" jdbcType="DECIMAL" property="ptotal" />
     <result column="quantity" jdbcType="INTEGER" property="quantity" />
     <result column="paystatus" jdbcType="VARCHAR" property="paystatus" />
-    <result column="updateAmount" jdbcType="VARCHAR" property="updateamount" />
-    <result column="expressCode" jdbcType="VARCHAR" property="expresscode" />
-    <result column="expressName" jdbcType="VARCHAR" property="expressname" />
-    <result column="otherRequirement" jdbcType="VARCHAR" property="otherrequirement" />
+    <result column="updateAmount" jdbcType="VARCHAR" property="updateAmount" />
+    <result column="expressCode" jdbcType="VARCHAR" property="expressCode" />
+    <result column="expressName" jdbcType="VARCHAR" property="expressName" />
+    <result column="otherRequirement" jdbcType="VARCHAR" property="otherRequirement" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
-    <result column="expressNo" jdbcType="VARCHAR" property="expressno" />
-    <result column="expressCompanyName" jdbcType="VARCHAR" property="expresscompanyname" />
-    <result column="lowStocks" jdbcType="VARCHAR" property="lowstocks" />
-    <result column="confirmSendProductRemark" jdbcType="VARCHAR" property="confirmsendproductremark" />
-    <result column="closedComment" jdbcType="VARCHAR" property="closedcomment" />
+    <result column="expressNo" jdbcType="VARCHAR" property="expressNo" />
+    <result column="expressCompanyName" jdbcType="VARCHAR" property="expressCompanyName" />
+    <result column="lowStocks" jdbcType="VARCHAR" property="lowStocks" />
+    <result column="confirmSendProductRemark" jdbcType="VARCHAR" property="confirmSendProductRemark" />
+    <result column="closedComment" jdbcType="VARCHAR" property="closedComment" />
     <result column="score" jdbcType="INTEGER" property="score" />
   </resultMap>
   <sql id="Base_Column_List">
@@ -36,4 +36,13 @@
   <update id="updateOrderByDel" parameterType="integer">
     update t_order set status = cancel where id = #{id}
   </update>
+
+  <select id="selectOrderList" resultMap="BaseResultMap">
+    select * from t_order
+    <where>
+      <if test="account != null and account != ''">
+        and account =#{account}
+      </if>
+    </where>
+  </select>
 </mapper>

@@ -1,15 +1,18 @@
 package com.qf.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
 @Entity
-public class TOrder {
+public class TOrder implements Serializable {
     @Id
     private Integer id;
 
@@ -21,6 +24,8 @@ public class TOrder {
 
     private BigDecimal rebate;
 
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date createdate;
 
     private String status;
@@ -49,11 +54,11 @@ public class TOrder {
 
     private String expressNo;
 
-    private String expressCompanyname;
+    private String expressCompanyName;
 
     private String lowStocks;
 
-    private String confirmSendProductremark;
+    private String confirmSendProductRemark;
 
     private String closedComment;
 

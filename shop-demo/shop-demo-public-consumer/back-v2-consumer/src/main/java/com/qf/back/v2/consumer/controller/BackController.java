@@ -7,9 +7,7 @@ import com.qf.dto.PageBean;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TOrder;
 import com.qf.entity.TProduct;
-import com.qf.entity.TProductType;
 import com.qf.entity.TUser;
-import com.qf.mapper.TProductTypeMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
@@ -21,7 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -30,9 +27,6 @@ public class BackController {
 
     @Autowired
     private IBackService service;
-
-    @Autowired
-    private TProductTypeMapper tProductTypeMapper;
 
     @RequestMapping("login")
     public String login(@RequestParam(value = "username")String username, @RequestParam(value = "password")String password,ModelMap map){
@@ -87,7 +81,7 @@ public class BackController {
     @ResponseBody
     public String productList(PageBean pageBean,String pname,Integer typeId,ModelMap map){
         ResultBean resultBean = service.productList(pageBean,pname,typeId);
-        List<TProductType> tProductTypes = tProductTypeMapper.selectAll();
+        ResultBean tProductTypes = service.selectProductType();
         map.put("productType",tProductTypes);
         map.put("typeId",typeId);
         map.put("pageInfo",resultBean.getData());
@@ -103,7 +97,7 @@ public class BackController {
     @ResponseBody
     public String updateProductInit(Integer id,ModelMap map){
         ResultBean resultBean = service.updateProductInit(id);
-        List<TProductType> tProductTypes = tProductTypeMapper.selectAll();
+        ResultBean tProductTypes = service.selectProductType();
         map.put("productType",tProductTypes);
         map.put("product",resultBean.getData());
         return "updateProduct";

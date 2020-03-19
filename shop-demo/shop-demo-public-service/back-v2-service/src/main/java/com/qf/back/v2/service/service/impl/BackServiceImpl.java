@@ -10,6 +10,7 @@ import com.qf.entity.TProduct;
 import com.qf.entity.TUser;
 import com.qf.mapper.TOrderMapper;
 import com.qf.mapper.TProductMapper;
+import com.qf.mapper.TProductTypeMapper;
 import com.qf.mapper.TUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +29,9 @@ public class BackServiceImpl implements IBackService {
 
     @Autowired
     private TProductMapper productMapper;
+
+    @Autowired
+    private TProductTypeMapper productTypeMapper;
 
     @Override
     public ResultBean login(String username, String password) {
@@ -144,6 +148,11 @@ public class BackServiceImpl implements IBackService {
             return ResultBean.success("删除商品成功！");
         }
         return ResultBean.success("删除商品失败！");
+    }
+
+    @Override
+    public ResultBean selectProductType() {
+        return ResultBean.success(productTypeMapper.selectAll(),"获取类型成功");
     }
 
 }

@@ -68,4 +68,9 @@ public class BackServiceHystrix implements IBackService {
     public ResultBean deleteProductById(Integer id) {
         return ResultBean.error("抱歉，您的网络有问题");
     }
+
+    @Override
+    public ResultBean selectProductType() {
+        return ResultBean.error("抱歉，您的网络有问题");
+    }
 }

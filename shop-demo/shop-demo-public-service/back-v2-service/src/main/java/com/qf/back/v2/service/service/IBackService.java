@@ -35,4 +35,5 @@ public interface IBackService {
 
     ResultBean deleteProductById(Integer id);
 
+    ResultBean selectProductType();
 }

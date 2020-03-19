@@ -13,8 +13,8 @@ public class TProduct implements Serializable{
   @Id
   private Long pid;
   private String pname;
-  private double price;
-  private double salePrice;
+  private Double price;
+  private Double salePrice;
   private Long typeId;
   private Long status;
   private String pimage;

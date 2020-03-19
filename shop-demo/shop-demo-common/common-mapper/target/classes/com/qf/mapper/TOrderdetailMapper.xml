@@ -3,18 +3,18 @@
 <mapper namespace="com.qf.mapper.TOrderdetailMapper">
   <resultMap id="BaseResultMap" type="com.qf.entity.TOrderdetail">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="orderID" jdbcType="INTEGER" property="orderid" />
-    <result column="productID" jdbcType="INTEGER" property="productid" />
+    <result column="orderID" jdbcType="INTEGER" property="orderId" />
+    <result column="productID" jdbcType="INTEGER" property="productId" />
     <result column="price" jdbcType="DECIMAL" property="price" />
     <result column="number" jdbcType="INTEGER" property="number" />
-    <result column="productName" jdbcType="VARCHAR" property="productname" />
+    <result column="productName" jdbcType="VARCHAR" property="productName" />
     <result column="fee" jdbcType="DECIMAL" property="fee" />
     <result column="total0" jdbcType="DECIMAL" property="total0" />
-    <result column="isComment" jdbcType="VARCHAR" property="iscomment" />
-    <result column="lowStocks" jdbcType="VARCHAR" property="lowstocks" />
+    <result column="isComment" jdbcType="VARCHAR" property="isComment" />
+    <result column="lowStocks" jdbcType="VARCHAR" property="lowStocks" />
     <result column="score" jdbcType="INTEGER" property="score" />
-    <result column="specInfo" jdbcType="VARCHAR" property="specinfo" />
-    <result column="giftID" jdbcType="VARCHAR" property="giftid" />
+    <result column="specInfo" jdbcType="VARCHAR" property="specInfo" />
+    <result column="giftID" jdbcType="VARCHAR" property="giftId" />
   </resultMap>
   <sql id="Base_Column_List">
     id, orderID, productID, price, number, productName, fee, total0, isComment, lowStocks, 

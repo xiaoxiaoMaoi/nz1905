@@ -1,7 +1,14 @@
 package com.qf.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ResultBean implements Serializable {
 
     private static final long serialVersionUID = 42L;
@@ -101,31 +108,6 @@ public class ResultBean implements Serializable {
         resultBean.setMessage(message);
         return  resultBean;
 
-    }
-
-
-    public int getErrno() {
-        return errno;
-    }
-
-    public void setErrno(int errno) {
-        this.errno = errno;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
     }
 
 }

@@ -4,7 +4,7 @@ import com.qf.dto.ResultBean;
 
 public interface ISearchService {
 
-    ResultBean searchByKeyword(String keyword);
+    ResultBean searchByKeyword(Integer pageNum,Integer pageSize,String keyword);
 
     ResultBean addProduct(Long id);
 

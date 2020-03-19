@@ -1,5 +1,6 @@
 package com.qf.solr.v1.service.service.impl;
 
+import com.github.pagehelper.PageInfo;
 import com.qf.dto.ResultBean;
 import com.qf.dto.TProductSearchDTO;
 import com.qf.mapper.TProductSearchDTOMapper;
@@ -30,15 +31,18 @@ public class SearchServiceImpl implements ISearchService {
     private TProductSearchDTOMapper mapper;
 
     @Override
-    public ResultBean searchByKeyword(String keyword) {
+    public ResultBean searchByKeyword(Integer pageNum,Integer pageSize,String keyword) {
 
         //1.创建查询对象
         SolrQuery query = new SolrQuery();
         query.set("df","t_product_keywords");
         query.setQuery(keyword);
         //2.分页
-        query.setStart(0);
-        query.setRows(12);
+        query.setStart((pageNum-1)*pageSize);
+        query.setRows(pageSize);
+        PageInfo<TProductSearchDTO> pageInfo = new PageInfo<>();
+        long totalCount = 0L;
+        List<TProductSearchDTO> products =new ArrayList<>();
         //3.高亮
         query.setHighlight(true);
         query.addHighlightField("t_product_name");
@@ -48,10 +52,10 @@ public class SearchServiceImpl implements ISearchService {
         try {
             QueryResponse response =solrClient.query(query);
 
-            List<TProductSearchDTO> products =new ArrayList<>();
-
             //获得结果集
             SolrDocumentList results =response.getResults();
+
+            totalCount = results.getNumFound();
 
             //获得高亮结果集
             Map<String,Map<String,List<String>>> highlighting = response.getHighlighting();
@@ -66,24 +70,31 @@ public class SearchServiceImpl implements ISearchService {
                 Map<String,List<String>> stringListMap =highlighting.get(stringId);
                 List<String> t_product_nameList =stringListMap.get("t_product_name");
                 String t_product_name = t_product_nameList.get(0);
-                product.settProductName(t_product_name);
+                product.setTProductName(t_product_name);
 
                 Double t_product_sale_price =(Double) document.getFieldValue("t_product_sale_price");
-                product.settProductSalePrice(new BigDecimal(t_product_sale_price));
+                product.setTProductSalePrice(new BigDecimal(t_product_sale_price));
                 String t_product_pimage = (String) document.getFieldValue("t_product_pimage");
-                product.settProductPimage(t_product_pimage);
+                product.setTProductPimage(t_product_pimage);
                 String t_product_pdesc = (String) document.getFieldValue("t_product_pdesc");
-                product.settProductPdesc(t_product_pdesc);
+                product.setTProductPdesc(t_product_pdesc);
 
                 products.add(product);
             }
-            return ResultBean.success(products);
+            pageInfo.setPageNum(pageNum);
+            pageInfo.setPageSize(pageSize);
+            pageInfo.setTotal(totalCount);
+            pageInfo.setPages((int) (totalCount%pageSize==0?(totalCount/pageSize):(totalCount/pageSize)+1));
+            pageInfo.setList(products);
+            pageInfo.setNavigatePages(5);
+            return ResultBean.success(pageInfo);
 
         } catch (SolrServerException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return ResultBean.error("查询出现异常");
     }
 
@@ -101,10 +112,10 @@ public class SearchServiceImpl implements ISearchService {
         //2.封装成SolrInputDocument
         SolrInputDocument document =new SolrInputDocument();
         document.setField("id",product.getId().toString());
-        document.setField("t_product_name",product.gettProductName());
-        document.setField("t_product_sale_price",product.gettProductSalePrice().floatValue());
-        document.setField("t_product_pimage",product.gettProductPimage());
-        document.setField("t_product_pdesc",product.gettProductPdesc());
+        document.setField("t_product_name",product.getTProductName());
+        document.setField("t_product_sale_price",product.getTProductSalePrice().floatValue());
+        document.setField("t_product_pimage",product.getTProductPimage());
+        document.setField("t_product_pdesc",product.getTProductPdesc());
         //3.插入到solr库里
         try {
             solrClient.add(document);
@@ -130,10 +141,10 @@ public class SearchServiceImpl implements ISearchService {
         for (TProductSearchDTO product : products) {
             SolrInputDocument document = new SolrInputDocument();
             document.setField("id",product.getId().toString());
-            document.setField("t_product_name",product.gettProductName());
-            document.setField("t_product_sale_price",product.gettProductSalePrice().floatValue());
-            document.setField("t_product_pimage",product.gettProductPimage());
-            document.setField("t_product_pdesc",product.gettProductPdesc());
+            document.setField("t_product_name",product.getTProductName());
+            document.setField("t_product_sale_price",product.getTProductSalePrice().floatValue());
+            document.setField("t_product_pimage",product.getTProductPimage());
+            document.setField("t_product_pdesc",product.getTProductPdesc());
 
             //存到集合中
             docs.add(document);
@@ -142,11 +153,11 @@ public class SearchServiceImpl implements ISearchService {
         try {
             solrClient.add(docs);
             solrClient.commit();
-        } catch (SolrServerException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            return ResultBean.error("添加到solr库失败!");
         }
+
 
         return ResultBean.success("添加到solr库成功!");
     }

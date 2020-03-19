@@ -1,8 +1,4 @@
-package com.qf.util;/*
-    @auter wwx
-    @date 2020/3/11
-*/
-;
+package com.qf.util;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.entity.UrlEncodedFormEntity;

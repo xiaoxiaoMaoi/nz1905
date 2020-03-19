@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="/"/>
+<!--    <base href="[[${pageContext.request.contextPath}]]/">-->
+    <link href="css/H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form action="/back/updateOrderById">
+        <div class="formControls col-3">
+            <label>订单编号：</label>
+            <input type="text" th:value="${order.id}" th:text="${order.id}" id="id" name="id" disabled="disabled"/>
+        </div>
+        <div class="formControls col-3">
+            <label>所属用户：</label>
+            <input type="text" th:value="${order.pname}" th:text="${order.pname}" id="pname" name="pname" disabled="disabled"/>
+        </div>
+        <div class="formControls col-3">
+            <label>订单创建日期：</label>
+            <input type="date" th:value="${order.createdate}" th:text="${#dates.format(order.createdate,'yyyy-MM-dd HH:mm:ss')}" id="createdate" name="createdate" disabled="disabled"/>
+        </div>
+        <div class="formControls col-3">
+            <label>订单金额：</label>
+            <input type="text" th:value="${order.amount}" th:text="${order.amount}" id="amount" name="amount" disabled="disabled"/>
+        </div>
+
+        <div class="formControls col-3">
+            <label>订单状态：</label>
+            <select name="status" id="status">
+    <!--            <option th:value="0">请选择订单状态</option>-->
+                <option th:if="${order.status eq 'init' ? 'selected' : ''}" th:text="订单已出库" th:value="init">订单状态</option>
+                <option th:if="${order.status eq 'send' ? 'selected' : ''}" th:text="订单已发送" th:value="send">订单状态</option>
+                <option th:if="${order.status eq 'pass' ? 'selected' : ''}" th:text="订单已送达" th:value="pass">订单状态</option>
+                <option th:if="${order.status eq 'sign' ? 'selected' : ''}" th:text="订单已签收" th:value="sign" >订单状态</option>
+                <option th:if="${order.status eq 'cancel' ? 'selected' : ''}" th:text="订单被取消" th:value="cancel">订单状态</option>
+            </select>
+        </div>
+        <div class="formControls col-3">
+            <label>支付状态：</label>
+            <select name="paystatus" id="paystatus">
+    <!--            <option th:value="0">请选择支付状态</option>-->
+                <option th:if="${order.paystatus eq 'y' ? 'selected' : ''}" th:text="订单已支付" th:value="init">支付状态</option>
+                <option th:if="${order.paystatus eq 'n' ? 'selected' : ''}" th:text="订单未支付" th:value="send">支付状态</option>
+            </select>
+        </div>
+        <input type="button" onclick="tijiao()" value="修改" class="btn btn-primary radius"/>
+    </form>
+    <script type="text/javascript" src="lib/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+    <script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+    <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="js/H-ui.js"></script>
+    <script type="text/javascript" src="js/H-ui.admin.js"></script>
+    <script type="text/javascript">
+        function tijiao(){
+            var order = {
+                "id":$("#id").val().trim(),
+                "pname":$("#pname").val().trim(),
+                "createdate":$("#createdate").val().trim(),
+                "amount":$("#amount").val().trim(),
+                "status":$("#status").val().trim(),
+                "paystatus":$("#paystatus").val().trim(),
+            }
+            //console.log(order);
+            $.ajax({
+                type:"POST",
+                url:"/back/updateOrderById",
+                dataType:"JSON",
+                contentType:"application/json",
+                data:JSON.stringify(order),
+                success:function(data){
+                    //console.log(data);
+                    if (data.errno>0){
+                        //操作成功
+                        layer.msg("修改订单成功!",{"icon":6},function(){
+                            parent.$(".layui-laypage-refresh")[0].click();
+                            //当你在iframe页面关闭自身时
+                            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+                            parent.layer.close(index); //再执行关闭
+                            //location.href="/backUser/selectorderByCondition?userId=${order.userId}";
+                        });
+                    }else {
+                        //操作失败
+                        layer.msg("修改订单失败!",{"icon":5},function(){
+                            //当你在iframe页面关闭自身时
+                            window.location.href="/back/updateOrderInit?id=${order.id}";
+                        });
+                    }
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>

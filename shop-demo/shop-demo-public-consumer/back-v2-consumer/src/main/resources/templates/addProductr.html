@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="/"/>
+<!--    <base href="[[${pageContext.request.contextPath}]]/">-->
+    <link href="css/H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form action="/back/addProduct">
+        <div class="formControls col-3">
+            <label>商品编号：</label>
+            <input type="text" id="pid" name="pid" disabled="disabled"/>
+        </div>
+        <div class="formControls col-3">
+            <label>商品名称：</label>
+            <input type="text" id="pname" name="pname"/>
+        </div>
+<!--        该位置放置图片-->
+        <div class="formControls col-3">
+            <label>商品图片：</label>
+            <img src="" id="pimage" name="pimage"/>
+        </div>
+        <div class="formControls col-3">
+            <label>商品售价：</label>
+            <input type="text" name="salePrice" id="salePrice"/>
+        </div>
+        <div class="formControls col-3">
+            <label>商品原价：</label>
+            <input type="text" id="price" name="price"/>
+        </div>
+        <div class="formControls col-3">
+            <label>商品类型：</label>
+            <select name="typeId" id="typeId">
+                <!--            <option th:value="0">请选择支付状态</option>-->
+                <option th:text="手机" th:value="1">商品类型</option>
+                <option th:text="家电" th:value="2">商品类型</option>
+            </select>
+        </div>
+        <div class="formControls col-3">
+            <label>商品库存：</label>
+            <select name="status" id="status">
+                <!--            <option th:value="0">请选择支付状态</option>-->
+                <option th:text="库存充足" th:value="1">商品库存</option>
+                <option th:text="库存不足" th:value="0">商品库存</option>
+            </select>
+        </div>
+        <div class="formControls col-3">
+            <label>商品热度：</label>
+            <select name="flag" id="flag">
+                <!--            <option th:value="0">请选择支付状态</option>-->
+                <option th:text="爆款商品" th:value="1">商品热度</option>
+                <option th:text="促销商品" th:value="0">商品热度</option>
+            </select>
+        </div>
+<!--        <div class="formControls col-3">-->
+<!--            <label>商品创建日期：</label>-->
+<!--            <input type="datetime-local" id="createTime" name="createTime" disabled="disabled"/>-->
+<!--        </div>-->
+<!--        <div class="formControls col-3">-->
+<!--            <label>商品更新日期：</label>-->
+<!--            <input type="datetime-local" id="updateTime" name="updateTime"/>-->
+<!--        </div>-->
+        <input type="hidden" th:value="${user.id}" id="createUser" name="createUser"/>
+        <input type="hidden" th:value="${user.id}" id="updateUser" name="updateUser"/>
+        <input type="button" onclick="tijiao()" value="添加" class="btn btn-primary radius"/>
+    </form>
+    <script type="text/javascript" src="lib/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+    <script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+    <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="js/H-ui.js"></script>
+    <script type="text/javascript" src="js/H-ui.admin.js"></script>
+    <script type="text/javascript">
+        function tijiao() {
+            var order = {
+                "pid": $("#pid").val().trim(),
+                "pname": $("#pname").val().trim(),
+                // "pimage":$("#pimage").val().trim(),
+                "salePrice": $("#salePrice").val().trim(),
+                "price": $("#price").val().trim(),
+                "typeId": $("#typeId").val().trim(),
+                "status": $("#status").val().trim(),
+                "flag": $("#flag").val().trim(),
+                // "createTime": $("#createTime").val().trim(),
+                // "updateTime": $("#updateTime").val().trim(),
+                "createUser": $("#createUser").val().trim(),
+                "updateUser": $("#updateUser").val().trim()
+            }
+            //console.log(order);
+            if (order.pname == '') {
+                alert('请输入商品名称!')
+                return
+            } else if (order.salePrice == '') {
+                alert('请输入商品原价')
+                return
+            } else if (order.price == '') {
+                alert('请输入商品售价!')
+                return
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "/back/addProduct",
+                    dataType: "JSON",
+                    contentType: "application/json",
+                    data: JSON.stringify(order),
+                    success: function (data) {
+                        //console.log(data);
+                        if (data.errno > 0) {
+                            //操作成功
+                            layer.msg("修改订单成功!", {"icon": 6}, function () {
+                                parent.$(".layui-laypage-refresh")[0].click();
+                                //当你在iframe页面关闭自身时
+                                var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+                                parent.layer.close(index); //再执行关闭
+                                //location.href="/backUser/selectorderByCondition?userId=${order.userId}";
+                            });
+                        } else {
+                            //操作失败
+                            layer.msg("修改订单失败!", {"icon": 5}, function () {
+                                //当你在iframe页面关闭自身时
+                                window.location.href = "/back/addProductInit?id=${user.id}";
+                            });
+                        }
+                    }
+                })
+            }
+        }
+
+    </script>
+</body>
+</html>

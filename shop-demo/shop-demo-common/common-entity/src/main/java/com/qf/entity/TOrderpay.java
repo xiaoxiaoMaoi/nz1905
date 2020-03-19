@@ -4,12 +4,13 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
 @Entity
-public class TOrderpay {
+public class TOrderpay implements Serializable {
 
     @Id
     private Integer id;

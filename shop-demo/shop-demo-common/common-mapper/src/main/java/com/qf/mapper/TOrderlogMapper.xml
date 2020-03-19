@@ -7,7 +7,7 @@
     <result column="account" jdbcType="VARCHAR" property="account" />
     <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
     <result column="content" jdbcType="VARCHAR" property="content" />
-    <result column="accountType" jdbcType="VARCHAR" property="accounttype" />
+    <result column="accountType" jdbcType="VARCHAR" property="accountType" />
   </resultMap>
   <sql id="Base_Column_List">
     id, orderid, account, createdate, content, accountType

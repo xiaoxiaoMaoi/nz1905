@@ -7,8 +7,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class SearchServiceHystrix implements ISearchService {
 
+
     @Override
-    public ResultBean searchByKeyword(String keyword) {
+    public ResultBean searchByKeyword(Integer pageNum, Integer pageSize, String keyword) {
         return ResultBean.error("抱歉，您的网络有问题");
     }
 

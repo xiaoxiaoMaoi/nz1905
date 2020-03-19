@@ -16,5 +16,10 @@
   <sql id="Base_Column_List">
     id, uname, password, phone, email, flag, create_time, create_user, update_time, update_user
   </sql>
-
+<select id="selectByUsername" resultType="com.qf.entity.TUser">
+  select * from t_user where uname=#{username}
+</select>
+  <select id="checkLogin" resultType="com.qf.entity.TUser">
+  select * from t_user where uname=#{username} and password=#{password}
+</select>
 </mapper>

@@ -20,6 +20,12 @@ public class BackController {
     @Autowired
     private IBackService service;
 
+//    @InitBinder
+//    public void initBinder(WebDataBinder binder) {
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//        dateFormat.setLenient(true);
+//        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+//    }
     @RequestMapping("login")
     @ResponseBody
     public ResultBean login(String username, String password){
@@ -90,4 +96,9 @@ public class BackController {
         return service.deleteProductById(id);
     }
 
+    @RequestMapping("selectProductType")
+    @ResponseBody
+    public ResultBean selectProductType(){
+        return service.selectProductType();
+    }
 }

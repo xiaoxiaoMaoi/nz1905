@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <base href="/"/>
-<!--    <base href="[[${pageContext.request.contextPath}]]/">-->
     <link href="css/H-ui.css" rel="stylesheet" type="text/css" />
     <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -18,10 +17,11 @@
         <div class="row cl ">
             <div class="formControls col-3">
                 商品名: <input type="text" class="input-text" style="width: 250px" id="pname" th:value="${pname}" />
-                商品类型：<select th:field="${productType.cid}" th:switch="${productType.cid}" name="typeId" id="typeId">
+                商品类型：<select name="typeId" id="typeId">
                     <option value="0">请选择</option>
-                    <option th:case="1" th:selected="${productType.cid==typeId}" th:value="1" th:text="手机">商品类型</option>
-                    <option th:case="2" th:selected="${productType.cid==typeId}" th:value="2" th:text="家电">商品类型</option>
+<!--                    <option th:each="${productType.cid}" th:if="${productType.cid eq typeId}" th:selected="selected" th:value="${typeId}" th:text="${productType.cname}">商品类型</option>-->
+                    <option th:if="${typeId eq '1'}" th:selected="selected" th:value="1" th:text="手机">商品类型</option>
+                    <option th:if="${typeId eq '2'}" th:selected="selected" th:value="2" th:text="家电">商品类型</option>
 <!--                <option th:each="ptype : ${productType}" th:if="${ptype.cid eq typeId ? 'selected' : ''}" th:text="${ptype.cname}" th:value="${ptype.cname}" >用户名</option>-->
                 </select>
             </div>
@@ -58,7 +58,7 @@
         </thead>
         <tbody>
 
-            <tr class="text-c" class="text-c" th:each="product : ${pageInfo.list}">
+            <tr class="text-c" th:each="product : ${pageInfo.list}">
                 <td><input type="checkbox" th:value="${product.pid}" name="box" class="checkedBox"></td>
                 <td th:text="${product.pid}">商品编号</td>
                 <td th:text="${product.pname}">商品名称</td>

@@ -52,6 +52,6 @@ public interface IBackService {
     @RequestMapping("back/deleteProductById")
     ResultBean deleteProductById(Integer id);
 
-    @RequestMapping("back/productType")
+    @RequestMapping("back/selectProductType")
     ResultBean selectProductType();
 }

@@ -28,6 +28,12 @@ public class BackController {
     @Autowired
     private IBackService service;
 
+//    @InitBinder
+//    public void initBinder(WebDataBinder binder) {
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//        dateFormat.setLenient(true);
+//        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+//    }
     @RequestMapping("login")
     public String login(@RequestParam(value = "username")String username, @RequestParam(value = "password")String password,ModelMap map){
         ResultBean resultBean = service.login(username,password);
@@ -78,11 +84,10 @@ public class BackController {
     }
 
     @RequestMapping("productList")
-    @ResponseBody
     public String productList(PageBean pageBean,String pname,Integer typeId,ModelMap map){
         ResultBean resultBean = service.productList(pageBean,pname,typeId);
         ResultBean tProductTypes = service.selectProductType();
-        map.put("productType",tProductTypes);
+        map.put("productType",tProductTypes.getData());
         map.put("typeId",typeId);
         map.put("pageInfo",resultBean.getData());
         map.put("pname",pname);
@@ -94,7 +99,6 @@ public class BackController {
     }
 
     @RequestMapping("updateProductInit")
-    @ResponseBody
     public String updateProductInit(Integer id,ModelMap map){
         ResultBean resultBean = service.updateProductInit(id);
         ResultBean tProductTypes = service.selectProductType();
@@ -133,5 +137,11 @@ public class BackController {
     @ResponseBody
     public ResultBean deleteProductById(Integer id){
         return service.deleteProductById(id);
+    }
+
+    @RequestMapping("selectProductType")
+    @ResponseBody
+    public ResultBean selectProductType(){
+        return service.selectProductType();
     }
 }

@@ -20,13 +20,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.qf</groupId>
-            <artifactId>common-mapper</artifactId>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.4.3</version>
         </dependency>
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-java8time</artifactId>
-            <version>3.0.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>common-mapper</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>

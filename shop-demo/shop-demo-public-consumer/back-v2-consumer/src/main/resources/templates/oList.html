@@ -17,7 +17,7 @@
             <div class="formControls col-3">
                 所属用户：<select name="account" id="account">
                 <option value="0">请选择</option>
-                <option th:each="pname : ${pageInfo.list}" th:text="${pname.account}" th:value="${pname.account}" th:if="${pname.accoun eq account ? 'selected' : ''}">用户名</option>
+                <option th:each="pname : ${pageInfo.list}" th:text="${pname.account}" th:value="${pname.account}" th:if="${pname.account eq account}" th:selected="selected">用户名</option>
             </select>
             </div>
         </div>
@@ -52,7 +52,8 @@
                 <td th:text="${order.id}">1</td>
                 <td th:text="${order.account}">用户名</td>
                 <td>
-                    <span type="date" th:text="${#dates.format(order.createdate, 'yyyy-MM-dd HH:mm:ss')}">2011-11-11 11:11:11</span>
+<!--                    <fmt:formatDate value="${order.date}" pattern="yyyy-MM-dd"></fmt:formatDate>-->
+                    <input type="datetime-local" th:text="${#dates.format(order.createdate, 'yyyy-MM-dd HH:mm:ss')}">2011-11-11 11:11:11</input>
                 </td>
                 <td th:text="${order.amount}">金额</td>
                 <td>

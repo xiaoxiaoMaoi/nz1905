@@ -51,9 +51,8 @@
                 <td><input type="checkbox" th:value="${order.id}" name="box" class="checkedBox"></td>
                 <td th:text="${order.id}">1</td>
                 <td th:text="${order.account}">用户名</td>
-                <td>
+                <td th:text="${#dates.format(order.createdate, 'yyyy-MM-dd HH:mm:ss')}">
 <!--                    <fmt:formatDate value="${order.date}" pattern="yyyy-MM-dd"></fmt:formatDate>-->
-                    <input type="datetime-local" th:text="${#dates.format(order.createdate, 'yyyy-MM-dd HH:mm:ss')}">2011-11-11 11:11:11</input>
                 </td>
                 <td th:text="${order.amount}">金额</td>
                 <td>

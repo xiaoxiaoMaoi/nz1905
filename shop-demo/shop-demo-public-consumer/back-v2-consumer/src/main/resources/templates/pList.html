@@ -71,11 +71,9 @@
                 <td th:if="${product.status eq '0'}" th:text="库存不足">商品库存</td>
                 <td th:if="${product.flag eq '1'}" th:text="爆款商品">商品热度</td>
                 <td th:if="${product.flag eq '0'}" th:text="促销商品">商品热度</td>
-                <td>
-                    <span th:text="${#dates.format(product.createTime,'yyyy-MM-dd HH:mm:ss')}">4564546</span>
+                <td th:text="${#dates.format(product.createTime,'yyyy-MM-dd HH:mm:ss')}">
                 </td>
-                <td>
-                    <span th:text="${#dates.format(product.updateTime,'yyyy-MM-dd HH:mm:ss')}">4564546</span>
+                <td th:text="${#dates.format(product.updateTime,'yyyy-MM-dd HH:mm:ss')}">
                 </td>
                 <td class="td-manage"><a title="编辑" href="javascript:;" onclick="product_edit('订单编辑','/back/updateProductInit?id=${product.pid}',[[${product.id}]],'800','500')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="product_del(this,[[${product.pid}]])" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
             </tr>

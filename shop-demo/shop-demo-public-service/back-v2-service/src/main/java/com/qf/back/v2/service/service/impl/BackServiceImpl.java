@@ -14,6 +14,7 @@ import com.qf.mapper.TUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -108,6 +109,7 @@ public class BackServiceImpl implements IBackService {
 
     @Override
     public ResultBean updateProductById(TProduct tProduct) {
+        tProduct.setUpdateTime(new Date());
         int result =  productMapper.updateByPrimaryKeySelective(tProduct);
         if (result != 0) {
             return ResultBean.success("修改商品成功!");
@@ -117,6 +119,8 @@ public class BackServiceImpl implements IBackService {
 
     @Override
     public ResultBean addProduct(TProduct product) {
+        product.setCreateTime(new Date());
+        product.setUpdateTime(new Date());
         int result = productMapper.insertSelective(product);
         if (result != 0) {
             return ResultBean.success("添加商品成功!");

@@ -1,5 +1,6 @@
 package com.qf.back.v2.consumer.service;
 
+import com.github.pagehelper.PageInfo;
 import com.qf.back.v2.consumer.service.fallback.BackServiceHystrix;
 import com.qf.dto.PageBean;
 import com.qf.dto.ResultBean;
@@ -18,7 +19,7 @@ public interface IBackService {
     //-------------以下是订单的操作------------------
 
     @RequestMapping("back/orderList")
-    ResultBean orderList(@RequestParam(value = "pageBean")PageBean pageBean, @RequestParam(value = "account")String account);
+    PageInfo<TOrder> orderList(@RequestParam(value = "pageBean")PageBean pageBean, @RequestParam(value = "account")String account);
 
     @RequestMapping("back/updateOrderInit")
     ResultBean updateOrderInit(Integer id);
@@ -35,7 +36,7 @@ public interface IBackService {
     //-------------以下是商品的操作------------------
 
     @RequestMapping("back/productList")
-    ResultBean productList(@RequestParam(value = "pageBean")PageBean pageBean,@RequestParam(value = "pname")String pname,@RequestParam(value = "typeId")Integer typeId);
+    PageInfo<TProduct> productList(@RequestParam(value = "pageBean")PageBean pageBean,@RequestParam(value = "pname")String pname,@RequestParam(value = "typeId")Integer typeId);
 
     @RequestMapping("back/updateProductInit")
     ResultBean updateProductInit(Integer id);

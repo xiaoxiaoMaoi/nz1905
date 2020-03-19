@@ -1,17 +1,20 @@
 package com.qf.back.v2.service.controller;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.github.pagehelper.PageInfo;
 import com.qf.back.v2.service.service.IBackService;
 import com.qf.dto.PageBean;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TOrder;
 import com.qf.entity.TProduct;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @RestController
 @RequestMapping("back")
@@ -20,12 +23,12 @@ public class BackController {
     @Autowired
     private IBackService service;
 
-//    @InitBinder
-//    public void initBinder(WebDataBinder binder) {
-//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//        dateFormat.setLenient(true);
-//        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
-//    }
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(true);
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+    }
     @RequestMapping("login")
     @ResponseBody
     public ResultBean login(String username, String password){
@@ -34,7 +37,7 @@ public class BackController {
 
     @RequestMapping("orderList")
     @ResponseBody
-    public ResultBean orderList(PageBean pageBean, String account){
+    public PageInfo<TOrder> orderList(PageBean pageBean, String account){
         return service.orderList(pageBean,account);
     }
 
@@ -66,7 +69,7 @@ public class BackController {
 
     @RequestMapping("productList")
     @ResponseBody
-    public ResultBean productList(PageBean pageBean,String pname,Integer typeId){
+    public PageInfo<TProduct> productList(PageBean pageBean,String pname,Integer typeId){
         return service.productList(pageBean,pname,typeId);
     }
 

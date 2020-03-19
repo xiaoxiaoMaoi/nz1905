@@ -1,6 +1,7 @@
 package com.qf.back.v2.consumer.controller;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.github.pagehelper.PageInfo;
 import com.google.gson.Gson;
 import com.qf.back.v2.consumer.service.IBackService;
 import com.qf.dto.PageBean;
@@ -9,15 +10,16 @@ import com.qf.entity.TOrder;
 import com.qf.entity.TProduct;
 import com.qf.entity.TUser;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,12 +30,12 @@ public class BackController {
     @Autowired
     private IBackService service;
 
-//    @InitBinder
-//    public void initBinder(WebDataBinder binder) {
-//        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-//        dateFormat.setLenient(true);
-//        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
-//    }
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(true);
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
+    }
     @RequestMapping("login")
     public String login(@RequestParam(value = "username")String username, @RequestParam(value = "password")String password,ModelMap map){
         ResultBean resultBean = service.login(username,password);
@@ -46,8 +48,9 @@ public class BackController {
 
     @RequestMapping("orderList")
     public String orderList(PageBean pageBean,String account,ModelMap map){
-        ResultBean resultBean = service.orderList(pageBean,account);
-        map.put("pageInfo",resultBean.getData());
+        PageInfo<TOrder> pageInfo = service.orderList(pageBean,account);
+//        map.put("pageInfo",resultBean.getData());
+        map.put("pageInfo",pageInfo);
         map.put("account",account);
         map.put("url","/back/orderList");
         Map<String,Object> paramMap = new HashMap<>();
@@ -85,11 +88,11 @@ public class BackController {
 
     @RequestMapping("productList")
     public String productList(PageBean pageBean,String pname,Integer typeId,ModelMap map){
-        ResultBean resultBean = service.productList(pageBean,pname,typeId);
+        PageInfo<TProduct> pageInfo = service.productList(pageBean,pname,typeId);
         ResultBean tProductTypes = service.selectProductType();
         map.put("productType",tProductTypes.getData());
         map.put("typeId",typeId);
-        map.put("pageInfo",resultBean.getData());
+        map.put("pageInfo",pageInfo);
         map.put("pname",pname);
         map.put("url","/back/productList");
         Map<String,Object> paramMap = new HashMap<>();

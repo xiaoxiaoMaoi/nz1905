@@ -45,13 +45,14 @@ public class BackServiceImpl implements IBackService {
     //-------------以下是订单的操作------------------
 
     @Override
-    public ResultBean orderList(PageBean pageBean,String account) {
+    public PageInfo<TOrder> orderList(PageBean pageBean,String account) {
         PageHelper.startPage(pageBean.getCurrentPage(),pageBean.getPageSize());
 //        Example example = new Example(TOrder.class);
 //        Example.Criteria criteria = example.createCriteria();
 //        criteria.andEqualTo("account",account);
         List<TOrder> orders =orderMapper.selectOrderList(account);
-        return ResultBean.success(new PageInfo<>(orders),"搜索用户成功！");
+        System.out.println(orders.get(0).getCreatedate().getClass().getName().toString());
+        return new PageInfo<>(orders);
     }
 
     @Override
@@ -93,13 +94,13 @@ public class BackServiceImpl implements IBackService {
     //-------------以下是商品的操作------------------
 
     @Override
-    public ResultBean productList(PageBean pageBean,String pname,Integer typeId) {
+    public PageInfo<TProduct> productList(PageBean pageBean,String pname,Integer typeId) {
         PageHelper.startPage(pageBean.getCurrentPage(),pageBean.getPageSize());
 //        Example example = new Example(TProduct.class);
 //        Example.Criteria criteria = example.createCriteria();
 //        criteria.andEqualTo("pname",pname);
         List<TProduct> products =productMapper.selectProductList(pname,typeId);
-        return ResultBean.success(new PageInfo<>(products),"搜索商品成功！");
+        return new PageInfo<>(products);
     }
 
     @Override

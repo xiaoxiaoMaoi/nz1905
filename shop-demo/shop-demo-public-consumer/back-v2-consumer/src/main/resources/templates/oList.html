@@ -80,13 +80,13 @@
                         支付状态
                     </span>
                 </td>
-                <td class="td-manage"><a title="编辑" href="javascript:;" onclick="order_edit('订单编辑','/back/updateOrderInit?id=${order.id}',[[${order.id}]],'800','500')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="order_del(this,[[${order.id}]])" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                <td class="td-manage"><a title="编辑" href="javascript:;" onclick="order_edit('订单编辑','/back/updateOrderInit?id=[[${order.id}]]',[${order.id}],'800','500')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="order_del(this,[[${order.id}]])" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
             </tr>
         </tbody>
     </table>
 
     <div class="sidebar-menu">
-        <div th:include="page.html :: page"></div>
+        <div include="page.html"></div>
     </div>
 <!--    <jsp:include page="/common/page.jsp">-->
 <!--        <jsp:param name="bodyId" value="userOrderBody"/>-->

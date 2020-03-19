@@ -9,7 +9,6 @@ public class StringUtil {
      */
     public static String getFileExtName(String fileName){
 
-
         int las = fileName.lastIndexOf(".");
 
         return fileName.substring(las+1);

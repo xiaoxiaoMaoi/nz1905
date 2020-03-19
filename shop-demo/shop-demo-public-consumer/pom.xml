@@ -7,6 +7,21 @@
     <groupId>com.qf</groupId>
     <artifactId>shop-demo-public-consumer</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>back-v1-consumer</module>
+        <module>back-v2-consumer</module>
+        <module>back-v3-consumer</module>
+        <module>back-v4-consumer</module>
+        <module>cart-v1-consumer</module>
+        <module>cart-v2-consumer</module>
+        <module>order-v1-consumer</module>
+        <module>order-v2-consumer</module>
+        <module>pay-consumer</module>
+        <module>regist-consumer</module>
+        <module>solr-v1-consumer</module>
+        <module>solr-v2-consumer</module>
+    </modules>
 
 </project>

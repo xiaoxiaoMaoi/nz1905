@@ -10,8 +10,14 @@
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>shop-demo-common</module>
+        <module>shop-demo-config-server</module>
+        <module>shop-demo-dependencies</module>
+        <module>shop-demo-eureka-server</module>
         <module>shop-demo-public-service</module>
         <module>shop-demo-public-consumer</module>
+        <module>shop-demo-shopping-consumer</module>
+        <module>shop-demo-shopping-service</module>
+        <module>shop-demo-zuul</module>
     </modules>
 
 

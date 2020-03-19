@@ -58,24 +58,24 @@
                 <option th:text="促销商品" th:value="0">商品热度</option>
             </select>
         </div>
-        <div class="formControls col-3">
-            <label>商品创建日期：</label>
-            <input type="datetime-local" id="createTime" name="createTime" disabled="disabled"/>
-        </div>
-        <div class="formControls col-3">
-            <label>商品更新日期：</label>
-            <input type="datetime-local" id="updateTime" name="updateTime"/>
-        </div>
+<!--        <div class="formControls col-3">-->
+<!--            <label>商品创建日期：</label>-->
+<!--            <input type="datetime-local" id="createTime" name="createTime" disabled="disabled"/>-->
+<!--        </div>-->
+<!--        <div class="formControls col-3">-->
+<!--            <label>商品更新日期：</label>-->
+<!--            <input type="datetime-local" id="updateTime" name="updateTime"/>-->
+<!--        </div>-->
         <input type="hidden" th:value="${user.id}" id="createUser" name="createUser"/>
         <input type="hidden" th:value="${user.id}" id="updateUser" name="updateUser"/>
         <input type="button" onclick="tijiao()" value="添加" class="btn btn-primary radius"/>
     </form>
-    <script type="text/javascript" src="../lib/jquery/1.9.1/jquery.js"></script>
-    <script type="text/javascript" src="../lib/layer/1.9.3/layer.js"></script>
-    <script type="text/javascript" src="../lib/laypage/1.2/laypage.js"></script>
-    <script type="text/javascript" src="../lib/My97DatePicker/WdatePicker.js"></script>
-    <script type="text/javascript" src="../js/H-ui.js"></script>
-    <script type="text/javascript" src="../js/H-ui.admin.js"></script>
+    <script type="text/javascript" src="lib/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+    <script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+    <script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="js/H-ui.js"></script>
+    <script type="text/javascript" src="js/H-ui.admin.js"></script>
     <script type="text/javascript">
         function tijiao(){
             var order = {

@@ -19,5 +19,6 @@
         <module>shop-demo-shopping-service</module>
         <module>shop-demo-zuul</module>
     </modules>
+    
 
 </project>

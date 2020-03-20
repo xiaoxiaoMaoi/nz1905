@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="/"/>
+    <link href="css/H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="orderBody">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户管理 <span class="c-gray en">&gt;</span> 订单列表 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="pd-20">
+    <div class="text-c">
+        <div class="row cl ">
+            <div class="formControls col-3">
+                所属用户：<select name="account" id="account">
+                <option value="0">请选择</option>
+                <option th:each="pname : ${pageInfo.list}" th:text="${pname.account}" th:value="${pname.account}" th:if="${pname.account eq account}" th:selected="selected">用户名</option>
+            </select>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="cl pd-5">
+                <button type="button"
+                        class="btn btn-success radius" onclick="selectByCondition()">
+                    <i class="Hui-iconfont">&#xe665;</i> 搜用户
+                </button>
+            </div>
+        </div>
+    </div>
+    <table class="table table-border table-bordered table-bg">
+        <thead>
+        <tr>
+            <th scope="col" colspan="9">订单列表</th>
+        </tr>
+        <tr class="text-c">
+            <th width="25"><input type="checkbox" id="all" name="" value=""></th>
+            <th width="150">订单编号</th>
+            <th width="150">所属用户</th>
+            <th width="150">订单创建日期</th>
+            <th width="150">订单金额</th>
+            <th width="100">订单状态</th>
+            <th width="100">支付状态</th>
+            <th width="100">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr class="text-c" th:each="order : ${pageInfo.list}">
+                <td><input type="checkbox" th:value="${order.id}" name="box" class="checkedBox"></td>
+                <td th:text="${order.id}">1</td>
+                <td th:text="${order.account}">用户名</td>
+                <td th:text="${#dates.format(order.createdate, 'yyyy-MM-dd HH:mm:ss')}">
+<!--                    <fmt:formatDate value="${order.date}" pattern="yyyy-MM-dd"></fmt:formatDate>-->
+                </td>
+                <td th:text="${order.amount}">金额</td>
+                <td>
+                    <span th:if="${order.status eq init}" th:text="订单已出库">
+                        订单状态
+                    </span>
+                    <span th:if="${order.status eq send}" th:text="订单已发送">
+                        订单状态
+                    </span>
+                    <span th:if="${order.status eq pass}" th:text="订单已送达">
+                        订单状态
+                    </span>
+                    <span th:if="${order.status eq sign}" th:text="订单已签收">
+                        订单状态
+                    </span>
+                    <span th:if="${order.status eq cancel}" th:text="订单被取消">
+                        订单状态
+                    </span>
+                </td>
+                <td>
+                    <span th:if="${order.paystatus eq y}" th:text="订单已支付">
+                        支付状态
+                    </span>
+                    <span th:if="${order.paystatus eq n}" th:text="订单未支付">
+                        支付状态
+                    </span>
+                </td>
+                <td class="td-manage"><a title="编辑" href="javascript:;" onclick="order_edit('订单编辑','/back/updateOrderInit?id=[[${order.id}]]',[${order.id}],'800','500')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="order_del(this,[[${order.id}]])" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="sidebar-menu">
+        <div include="page.html"></div>
+    </div>
+<!--    <jsp:include page="/common/page.jsp">-->
+<!--        <jsp:param name="bodyId" value="userOrderBody"/>-->
+<!--    </jsp:include>-->
+</div>
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+<script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/H-ui.js"></script>
+<script type="text/javascript" src="js/H-ui.admin.js"></script>
+<script type="text/javascript">
+    /*按条件查询用户信息*/
+    function selectByCondition(){
+        //获取输入的用户名
+        var account = $("#account").val();
+        //发送请求地址到后端，按条件查询用户信息
+        //给<body>标签去加载一个页面的数据
+        $("#orderBody").load("back/orderList",{"account":account});//requeset content application/json
+    }
+
+    /*
+        参数解释：
+        title	标题
+        url		请求的url
+        id		需要操作的数据id
+        w		弹出层宽度（缺省调默认值）
+        h		弹出层高度（缺省调默认值）
+    */
+    /*订单-删除*/
+    function order_del(obj,id){
+        layer.msg("抱歉，不能删除用户的订单凭证!",{"icon":5},function () {
+            $(".layui-laypage-refresh")[0].click();
+        });
+    }
+    /*订单-编辑*/
+    function order_edit(title,url,id,w,h){
+        layer_show(title,url,w,h);
+    }
+</script>
+</body>
+</html>

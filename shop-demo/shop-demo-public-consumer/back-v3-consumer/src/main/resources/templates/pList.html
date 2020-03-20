@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="/"/>
+    <link href="css/H-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="productBody">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户管理 <span class="c-gray en">&gt;</span> 商品列表 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="pd-20">
+    <div class="text-c">
+        <div class="row cl ">
+            <div class="formControls col-3">
+                商品名: <input type="text" class="input-text" style="width: 250px" id="pname" th:value="${pname}" />
+                商品类型：<select name="typeId" id="typeId">
+                    <option value="0">请选择</option>
+<!--                    <option th:each="${productType.cid}" th:if="${productType.cid eq typeId}" th:selected="selected" th:value="${typeId}" th:text="${productType.cname}">商品类型</option>-->
+                    <option th:if="${typeId eq '1'}" th:selected="selected" th:value="1" th:text="手机">商品类型</option>
+                    <option th:if="${typeId eq '2'}" th:selected="selected" th:value="2" th:text="家电">商品类型</option>
+<!--                <option th:each="ptype : ${productType}" th:if="${ptype.cid eq typeId ? 'selected' : ''}" th:text="${ptype.cname}" th:value="${ptype.cname}" >用户名</option>-->
+                </select>
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="cl pd-5">
+                <button type="button"
+                        class="btn btn-success radius" onclick="selectByCondition()">
+                    <i class="Hui-iconfont">&#xe665;</i> 搜商品
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="batchDatadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="product_add('添加商品','/back/addProductInit?id=[[${user.id}]]','800','500')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加商品</a></span></div>
+    <table class="table table-border table-bordered table-bg">
+        <thead>
+        <tr>
+            <th scope="col" colspan="14">订单列表</th>
+        </tr>
+        <tr class="text-c">
+            <th width="25"><input type="checkbox" id="all" name="" value=""></th>
+            <th width="150">商品编号</th>
+            <th width="150">商品名称</th>
+            <th width="150">商品图片</th>
+            <th width="100">商品售价</th>
+            <th width="100">商品原价</th>
+            <th width="100">商品种类</th>
+            <th width="100">商品库存</th>
+            <th width="100">商品热度</th>
+            <th width="130">商品上架日期</th>
+            <th width="130">商品更新日期</th>
+            <th width="100">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+            <tr class="text-c" th:each="product : ${pageInfo.list}">
+                <td><input type="checkbox" th:value="${product.pid}" name="box" class="checkedBox"></td>
+                <td th:text="${product.pid}">商品编号</td>
+                <td th:text="${product.pname}">商品名称</td>
+                <td><div style="width: 100px;height: 100px"><img th:src="${product.pimage}" style="width: 100px;height: 100px" ></div></td>
+                <td th:text="${product.salePrice}">商品售价</td>
+                <td th:text="${product.price}">商品原价</td>
+                <td th:if="${product.typeId eq '1'}" th:text="手机">商品类型</td>
+                <td th:if="${product.typeId eq '2'}" th:text="家电">商品类型</td>
+                <td th:if="${product.status eq '1'}" th:text="库存充足">商品库存</td>
+                <td th:if="${product.status eq '0'}" th:text="库存不足">商品库存</td>
+                <td th:if="${product.flag eq '1'}" th:text="爆款商品">商品热度</td>
+                <td th:if="${product.flag eq '0'}" th:text="促销商品">商品热度</td>
+                <td th:text="${#dates.format(product.createTime,'yyyy-MM-dd HH:mm:ss')}">
+                </td>
+                <td th:text="${#dates.format(product.updateTime,'yyyy-MM-dd HH:mm:ss')}">
+                </td>
+                <td class="td-manage"><a title="编辑" href="javascript:;" onclick="product_edit('订单编辑','/back/updateProductInit?id=[[${product.pid}]]',[[${product.id}]],'800','500')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="product_del(this,[[${product.pid}]])" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="sidebar-menu">
+        <div include="page.html"></div>
+    </div>
+<!--    <jsp:include page="/common/page.jsp">-->
+<!--        <jsp:param name="bodyId" value="userOrderBody"/>-->
+<!--    </jsp:include>-->
+</div>
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="lib/layer/1.9.3/layer.js"></script>
+<script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/H-ui.js"></script>
+<script type="text/javascript" src="js/H-ui.admin.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        //给全选的复选框添加事件
+        $("#all").click(function () {
+            // this 全选的复选框
+            var userids = this.checked;
+            //获取name=box的复选框 遍历输出复选框
+            $("input[name=box]").each(function () {
+                this.checked = userids;
+            });
+        });
+
+        //给name=box的复选框绑定单击事件
+        $("input[name=box]").click(function () {
+            //获取选中复选框长度
+            var length = $("input[name=box]:checked").length;
+            //未选中的长度
+            var len = $("input[name=box]").length;
+            if (length == len) {
+                $("#all").get(0).checked = true;
+            } else {
+                $("#all").get(0).checked = false;
+            }
+        });
+    });
+    /*批量删除操作*/
+    function batchDatadel(obj,id) {
+        //找到所有的被选中的复选框
+        var checkedBox =$(".checkedBox:checked");
+
+        if(checkedBox.length==0){
+            layer.msg("请选择要删除的商品",{"icon":5});
+            return;
+        }
+
+        //数组用来装选中用户id
+        var ids = [];
+        for(var i=0;i<checkedBox.length;i++){
+            ids.push(checkedBox[i].value);
+        }
+        layer.confirm('确认要删除吗？',function(index){
+            $.ajax({
+                url:"/back/batchProductDelete",
+                type:"GET",
+                data:"ids="+ids,
+                success:function(data){
+                    //给予操作提示
+                    //{"result":true,"data":""}
+                    if(data.errno>0){
+                        //操作成功
+                        layer.msg("批量删除商品成功!",{"icon":6},function(){
+                            //$(obj).parents("tr").remove();
+                            $(".layui-laypage-refresh")[0].click();
+                        });
+                    }else{
+                        //操作失败
+                        layer.msg("批量删除商品失败!",{"icon":5},function () {
+                            $(".layui-laypage-refresh")[0].click();
+                        });
+                    }
+                }
+            });
+        });
+    }
+    /*按条件查询用户信息*/
+    function selectByCondition(){
+        //获取输入的用户名
+        var pname = $("#pname").val();
+        //发送请求地址到后端，按条件查询用户信息
+        //给<body>标签去加载一个页面的数据
+        $("#productBody").load("back/productList",{"pname":pname});//requeset content application/json
+    }
+
+    /*
+        参数解释：
+        title	标题
+        url		请求的url
+        id		需要操作的数据id
+        w		弹出层宽度（缺省调默认值）
+        h		弹出层高度（缺省调默认值）
+    */
+    /*商品-增加*/
+    function product_add(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+    /*商品-删除*/
+    function product_del(obj,id){
+        console.log(id);
+        layer.confirm('确认要删除吗？',function(index){
+            //此处请求后台程序，下方是成功后的前台处理……
+            $.ajax({
+                url:"/backAdmin/travellerDelete",
+                type:"GET",
+                data:"id="+id,
+                success:function(data){
+
+                    //给予操作提示
+                    //{"result":true,"data":""}
+                    if(data.errno>0){
+                        //操作成功
+                        layer.msg("删除旅客成功!",{"icon":6},function(){
+                            //$(obj).parents("tr").remove();
+                            $(obj).parents("tr").remove();
+                            //layer.msg('已删除!',{icon:1,time:1000});
+                        });
+                    }else{
+                        //操作失败
+                        layer.msg("删除旅客失败!",{"icon":5},function () {
+                            $(".layui-laypage-refresh")[0].click();
+                        });
+                    }
+                }
+            });
+
+        });
+    }
+    /*商品-编辑*/
+    function product_edit(title,url,id,w,h){
+        layer_show(title,url,w,h);
+    }
+</script>
+</body>
+</html>

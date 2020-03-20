@@ -104,4 +104,10 @@ public class BackController {
     public ResultBean selectProductType(){
         return service.selectProductType();
     }
+
+    @RequestMapping("addProductInit")
+    @ResponseBody
+    public ResultBean addProductInit(Integer id){
+        return service.addProductInit(id);
+    }
 }
